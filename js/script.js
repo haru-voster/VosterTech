@@ -6,6 +6,7 @@ const products = [
   {
     id: 1,
     category: "Desktop",
+    type: "office-desktop",   // matches dropdown "Office"
     name: "Dell OptiPlex 7040 Desktop & 19\" Monitor",
     price: "Ksh.24,999",
     desc: "Intel i5-6500, 8GB RAM, 500GB HDD",
@@ -14,6 +15,7 @@ const products = [
   {
     id: 2,
     category: "Laptop",
+    type: "business-laptop",  // matches dropdown "Business"
     name: "HP EliteBook 840 G5 - 8GB / 256GB",
     price: "Ksh.26,999",
     desc: "Intel Core i5 8th Gen, 14\" FHD",
@@ -22,14 +24,34 @@ const products = [
   {
     id: 3,
     category: "Printer",
+    type: "inkjet-printer",   // matches dropdown "Inkjet"
+    name: "HP Inkjet All-in-One",
+    price: "Ksh.15,999",
+    desc: "Inkjet, Ethernet WIFI support",
+    img: "img/hp printer.webp"
+  },
+    {
+    id: 4,
+    category: "Printer",
+    type: "Canon Printer",   // matches dropdown "Inkjet"
+    name: "HP Inkjet All-in-One",
+    price: "Ksh.20,999",
+    desc: "Canon printer, WIFI support",
+    img: "img/canone2.webp"
+  },
+   {
+    id: 4,
+    category: "Printer",
+    type: "Canon Printer",   // matches dropdown "Inkjet"
     name: "HP Inkjet All-in-One",
     price: "Ksh.10,999",
-    desc: "Inkjet, WIFI support",
-    img: "img/hp printer.webp"
+    desc: "Canon printer, WIFI support",
+    img: "img/canon.png",
   },
   {
     id: 4,
     category: "Accessory",
+    type: "storage",          // matches dropdown "Storage"
     name: "SanDisk 128GB Flash",
     price: "Ksh.1,200",
     desc: "Durable USB flash drive",
@@ -144,4 +166,31 @@ document.addEventListener("DOMContentLoaded", function() {
   if (myCarousel) {
     // bootstrap will auto-run because data attributes present
   }
+});
+
+//filter script for headers
+
+function renderProducts(filterType = null) {
+  const grid = document.getElementById("productGrid");
+  grid.innerHTML = "";
+
+  products
+    .filter(p => !filterType || p.type === filterType)
+    .forEach(p => grid.appendChild(createProductCard(p)));
+
+  if (grid.innerHTML === "") {
+    grid.innerHTML = `<div class="alert alert-warning">No products found.</div>`;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  renderProducts(); // show all initially
+
+  document.querySelectorAll(".filter-link").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const type = this.dataset.filter;
+      renderProducts(type);
+    });
+  });
 });

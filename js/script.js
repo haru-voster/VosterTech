@@ -70,9 +70,9 @@ const products = [
     id: 4,
     category: "Accessory",
     type: "storage",          // matches dropdown "Storage"
-    name: "SanDisk 128GB Flash",
+    name: "External Drive",
     price: "Ksh.1,200",
-    desc: "Durable USB flash drive",
+    desc: "Durable SSD Transcend ",
     img: "img/storage2.jpeg"
   },
     {

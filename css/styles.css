@@ -1,0 +1,47 @@
+:root{
+  --card-radius: 10px;
+  --accent: #0d6efd;
+}
+
+/* Brand image */
+.brand-img{
+  width:40px;height:40px;object-fit:cover;border-radius:6px;
+}
+
+/* product card */
+.product-card{
+  border-radius: var(--card-radius);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  background:#fff;
+  overflow:hidden;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.product-card:hover{ transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+
+.product-img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  display:block;
+}
+
+/* ensure card content not too tall */
+.card-body p { min-height: 48px; }
+
+/* price styling */
+.product-price{ color: #d9534f; font-weight:700; font-size:18px; }
+
+/* WhatsApp order button */
+.btn-whatsapp{
+  background:#25D366;color:#fff;border:none;
+}
+.btn-whatsapp:hover{ opacity:0.95; }
+
+/* Accessories carousel slide img */
+.carousel .carousel-item img{ width:100%; height:250px; object-fit:cover; }
+
+/* Responsive tweaks */
+@media (max-width:576px){
+  .product-img{ height:160px; }
+  .carousel .carousel-item img{ height:180px; }
+}

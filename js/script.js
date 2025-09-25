@@ -3,6 +3,15 @@ const SELLER_PHONE = "254708466793";
 
 // Product data — you can add or replace images with absolute URLs for WhatsApp preview
 const products = [
+   {
+    id: 1,
+    category: "Laptop",
+    type: "business-laptop",   // matches dropdown "Office"
+    name: "New Brand HP Envy X360 ",
+    price: "Ksh.170,000",
+    desc: " Intel Iris Xe Graphics, Backlit Keyboard, 14 inch FHD, 13th Gen Core i7-1355U, 16GB DDR4, 1TB SSD",
+    img: "img/hp envy.jpg"
+  },
   {
     id: 1,
     category: "Desktop",
@@ -43,16 +52,16 @@ const products = [
     id: 4,
     category: "Printer",
     type: "Canon Printer",   // matches dropdown "Inkjet"
-    name: "HP Inkjet All-in-One",
+    name: "canon All-in-One",
     price: "Ksh.20,999",
-    desc: "Canon printer, WIFI support",
+    desc: "Canon printer, Printing, photocopying/scanning",
     img: "img/canone2.webp"
   },
    {
     id: 4,
     category: "Printer",
     type: "Canon Printer",   // matches dropdown "Inkjet"
-    name: "HP Inkjet All-in-One",
+    name: "Canon All-in-One",
     price: "Ksh.10,999",
     desc: "Canon printer, WIFI support",
     img: "img/canon.png",
@@ -65,6 +74,15 @@ const products = [
     price: "Ksh.1,200",
     desc: "Durable USB flash drive",
     img: "img/storage2.jpeg"
+  },
+    {
+    id: 4,
+    category: "Accessory",
+    type: "storage",          // matches dropdown "Storage"
+    name: "Plotter",
+    price: "Ksh.43,000",
+    desc: "Branding Combo Vinyl Cutting Plotter Contour 2 Feet",
+    img: "img/plotter.jpeg"
   }
 ];
 

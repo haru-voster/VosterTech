@@ -21,6 +21,15 @@ const products = [
     desc: "Intel Core i5 8th Gen, 14\" FHD",
     img: "img/new2.jpg"
   },
+    {
+    id: 2,
+    category: "Laptop",
+    type: "business-laptop",  // matches dropdown "Business"
+    name: "HP EliteBook 840 G5 - 4GB / 128GB SSD",
+    price: "Ksh.15,999",
+    desc: "Intel Core i5 6th Gen, 12\" FHD",
+    img: "img/hplaptop.jpg"
+  },
   {
     id: 3,
     category: "Printer",
@@ -63,8 +72,8 @@ const products = [
 const accessories = [
   "img/lenovo2.webp",
   "img/Hp-8200-desktop.jpg",
-  "img/accessory3.jpg",
-  "img/accessory4.jpg"
+  "img/plotter.jpeg",
+  "img/hplaptop.jpg"
 ];
 
 function createProductCard(p) {

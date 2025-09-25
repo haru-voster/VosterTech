@@ -9,7 +9,7 @@ const products = [
     name: "Dell OptiPlex 7040 Desktop & 19\" Monitor",
     price: "Ksh.24,999",
     desc: "Intel i5-6500, 8GB RAM, 500GB HDD",
-    img: "img/desktop1.jpg"
+    img: "img/desktop.png"
   },
   {
     id: 2,
@@ -17,15 +17,15 @@ const products = [
     name: "HP EliteBook 840 G5 - 8GB / 256GB",
     price: "Ksh.26,999",
     desc: "Intel Core i5 8th Gen, 14\" FHD",
-    img: "img/laptop1.jpg"
+    img: "img/new2.jpg"
   },
   {
     id: 3,
     category: "Printer",
-    name: "Canon Inkjet All-in-One",
+    name: "HP Inkjet All-in-One",
     price: "Ksh.10,999",
     desc: "Inkjet, WIFI support",
-    img: "img/printer1.jpg"
+    img: "img/hp printer.webp"
   },
   {
     id: 4,
@@ -33,14 +33,14 @@ const products = [
     name: "SanDisk 128GB Flash",
     price: "Ksh.1,200",
     desc: "Durable USB flash drive",
-    img: "img/accessory1.jpg"
+    img: "img/storage2.jpeg"
   }
 ];
 
 // accessory images for carousel (unique)
 const accessories = [
-  "img/accessory1.jpg",
-  "img/accessory2.jpg",
+  "img/lenovo2.webp",
+  "img/Hp-8200-desktop.jpg",
   "img/accessory3.jpg",
   "img/accessory4.jpg"
 ];

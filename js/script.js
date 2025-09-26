@@ -13,7 +13,7 @@ const products = [
     img: "img/hp envy.jpg"
   },
   {
-    id: 1,
+    id: 2,
     category: "Desktop",
     type: "office-desktop",   // matches dropdown "Office"
     name: "Dell OptiPlex 7040 Desktop & 19\" Monitor",
@@ -22,7 +22,7 @@ const products = [
     img: "img/desktop.png"
   },
   {
-    id: 2,
+    id: 3,
     category: "Laptop",
     type: "business-laptop",  // matches dropdown "Business"
     name: "HP EliteBook 840 G5 - 8GB / 256GB",
@@ -31,7 +31,7 @@ const products = [
     img: "img/new2.jpg"
   },
     {
-    id: 2,
+    id: 4,
     category: "Laptop",
     type: "business-laptop",  // matches dropdown "Business"
     name: "HP EliteBook 840 G5 - 4GB / 128GB SSD",
@@ -40,7 +40,7 @@ const products = [
     img: "img/hplaptop.jpg"
   },
   {
-    id: 3,
+    id: 5,
     category: "Printer",
     type: "inkjet-printer",   // matches dropdown "Inkjet"
     name: "HP Inkjet All-in-One",
@@ -49,7 +49,7 @@ const products = [
     img: "img/hp printer.webp"
   },
     {
-    id: 4,
+    id: 6,
     category: "Printer",
     type: "Canon Printer",   // matches dropdown "Inkjet"
     name: "canon All-in-One",
@@ -58,7 +58,7 @@ const products = [
     img: "img/canone2.webp"
   },
    {
-    id: 4,
+    id: 7,
     category: "Printer",
     type: "Canon Printer",   // matches dropdown "Inkjet"
     name: "Canon All-in-One",
@@ -67,7 +67,7 @@ const products = [
     img: "img/canon.png",
   },
   {
-    id: 4,
+    id: 8,
     category: "Accessory",
     type: "storage",          // matches dropdown "Storage"
     name: "External Drive",
@@ -76,14 +76,41 @@ const products = [
     img: "img/storage2.jpeg"
   },
     {
-    id: 4,
+    id: 9,
     category: "Accessory",
     type: "storage",          // matches dropdown "Storage"
     name: "Plotter",
     price: "Ksh.43,000",
     desc: "Branding Combo Vinyl Cutting Plotter Contour 2 Feet",
     img: "img/plotter.jpeg"
-  }
+  },
+       {
+    id: 10,
+    category: "Printer",
+    type: "Canon Printer",   // matches dropdown "Inkjet"
+    name: "Canon All-in-One",
+    price: "Ksh.10,999",
+    desc: "Canon printer, WIFI support",
+    img: "img/canon.avif",
+  },
+     {
+    id: 11,
+    category: "Printer",
+    type: "Canon Printer",   // matches dropdown "Inkjet"
+    name: "Canon All-in-One",
+    price: "Ksh.10,999",
+    desc: "Canon printer, WIFI support",
+    img: "img/canon.png",
+  },
+     {
+    id: 12,
+    category: "Printer",
+    type: "Epison Printer",   // matches dropdown "Inkjet"
+    name: "Epison Printer ",
+    price: "Ksh.10,999",
+    desc: "Epison Printer l3250, (WIFI/bluetooth/USB enabled)",
+    img: "img/epison printer.jpeg",
+  },
 ];
 
 // accessory images for carousel (unique)
@@ -91,7 +118,7 @@ const accessories = [
   "img/lenovo2.webp",
   "img/Hp-8200-desktop.jpg",
   "img/plotter.jpeg",
-  "img/hplaptop.jpg"
+  "img/case.webp"
 ];
 
 function createProductCard(p) {

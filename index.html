@@ -87,11 +87,69 @@
 
   <!-- Hero -->
   <header class="py-5 bg-light">
-    <div class="container text-center">
-      <h1 class="display-6">VosterTech — Computers, Laptops, Printers & Accessories</h1>
-      <p class="lead">Order via WhatsApp. Fast replies. Local delivery available.</p>
+  <div class="container text-center">
+    <!-- Business Name -->
+    <h1 class="display-6">VosterTech — Computers, Laptops, Printers & Accessories</h1>
+
+    <!-- Contact Info -->
+    <p class="lead">Order via WhatsApp. Fast replies. Local delivery available.</p>
+    <p class="fw-bold text-primary"> Call Now: <strong>0708466793</strong></p>
+
+    <!-- Marquee-style moving message -->
+    <div style="overflow: hidden; height: 30px; position: relative;">
+      <p id="moving-message" style="
+        position: absolute;
+        width: 100%;
+        font-weight: bold;
+        color: blue;
+        animation: slide 10s linear infinite;
+        white-space: nowrap;
+      ">
+        VosterTechies delivers across Kenya — Call us or WhatsApp
+      </p>
     </div>
-  </header>
+
+   <!-- Image Carousel Section -->
+<div class="image-carousel mt-4">
+  <div class="carousel-track">
+    <img src="img/lap1.jpeg" alt="Products in Stock">
+    <img src="img/hddexternal.jpeg" alt="Laptop">
+    <img src="img/hp envy.jpg" alt="Printer">
+    <img src="img/hp.jpg" alt="Accessories">
+    <!-- Duplicate set for seamless loop -->
+    <img src="img/hp pc.jpg" alt="Products in Stock">
+    <img src="img/hddexternal.jpeg" alt="Laptop">
+    <img src="img/acer.webp" alt="Printer">
+    <img src="img/hp laserjet.png" alt="Accessories">
+  </div>
+</div>
+
+<!-- CSS for Rightward Scrolling Animation -->
+<style>
+.image-carousel {
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll-right 20s linear infinite;
+}
+
+.carousel-track img {
+  max-height: 150px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+</style>
+
 
   <!-- Products Grid -->
   <main class="py-5">
@@ -103,6 +161,10 @@
           <!-- JS will inject product cards here -->
         </div>
       </section>
+      <div id="image-popup" class="popup-overlay" onclick="hidePopup()">
+  <img id="popup-img" src="" alt="Popup Image">
+</div>
+
 
       <!-- Accessories Carousel (auto rotate every 3s) -->
       <section id="accessories" class="mt-5">

@@ -277,3 +277,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+//product depsly
+
+function showPopup(imgSrc) {
+  document.getElementById("popup-img").src = imgSrc;
+  document.getElementById("image-popup").style.display = "flex";
+}
+
+function hidePopup() {
+  document.getElementById("image-popup").style.display = "none";
+}
+

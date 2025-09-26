@@ -111,6 +111,24 @@ const products = [
     desc: "Epison Printer l3250, (WIFI/bluetooth/USB enabled)",
     img: "img/epison printer.jpeg",
   },
+    {
+    id: 12,
+    category: "Accessory",
+    type: "display cable",   // matches dropdown "Inkjet"
+    name: "VGA display",
+    price: "Ksh.500",
+    desc: "Computer-monitor VGA display 1M",
+    img: "img/vga.jpg",
+  },
+    {
+    id: 12,
+    category: "Accessory",
+    type: "display cable",   // matches dropdown "Inkjet"
+    name: "HDMI to VGA adapter ",
+    price: "Ksh.1,500",
+    desc: "1080px for PC/laptop/Desktops",
+    img: "img/HDMI-VGA.jpg",
+  },
 ];
 
 // accessory images for carousel (unique)

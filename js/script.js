@@ -9,36 +9,47 @@ const products = [
     type: "business-laptop",   // matches dropdown "Office"
     name: "New Brand HP Envy X360 ",
     price: "Ksh.170,000",
-    desc: " Intel Iris Xe Graphics, Backlit Keyboard, 14 inch FHD, 13th Gen Core i7-1355U, 16GB DDR4, 1TB SSD",
+    desc: " Intel Iris Xe Graphics, Backlight Keyboard, 14 inch FHD, 13th Gen Core i7, 16GB, 1TB SSD",
     img: "img/hp envy.jpg"
   },
   {
-    id: 2,
-    category: "Desktop",
-    type: "office-desktop",   // matches dropdown "Office"
-    name: "Dell OptiPlex 7040 Desktop & 19\" Monitor",
-    price: "Ksh.24,999",
-    desc: "Intel i5-6500, 8GB RAM, 500GB HDD",
-    img: "img/desktop.png"
+    id: 1,
+    category: "Laptop",
+    type: "business-laptop",   // matches dropdown "Office"
+    name: "Lenovo IdeaPad ",
+    price: "Ksh.39,000",
+    desc: "Lenovo IdeaPad Flex 5 : Integrated Intel Iris Xe graphics 512SSD \ 16gb",
+    img: "img/lenovo2.webp"
   },
+
   {
     id: 3,
     category: "Laptop",
     type: "business-laptop",  // matches dropdown "Business"
-    name: "HP EliteBook 840 G5 - 8GB / 256GB",
-    price: "Ksh.26,999",
-    desc: "Intel Core i5 8th Gen, 14\" FHD",
+    name: "HP EliteBook ",
+    price: "Ksh.30,000",
+    desc: "Intel Core i7 10th Gen, 14\" FHD 840 G5 - 8GB / 256GB",
     img: "img/new2.jpg"
   },
     {
     id: 4,
     category: "Laptop",
     type: "business-laptop",  // matches dropdown "Business"
-    name: "HP EliteBook 840 G5 - 4GB / 128GB SSD",
-    price: "Ksh.15,999",
-    desc: "Intel Core i5 6th Gen, 12\" FHD",
-    img: "img/hplaptop.jpg"
+    name: "Lenovo Yoga",
+    price: "Ksh.22,999",
+    desc: "Lenovo Thinkpad X1 Yoga 256/8gb ram Gen5 14 inch FHD, Touchscreen Laptop",
+    img: "img/lenovo.webp"
   },
+    {
+    id: 2,
+    category: "Desktop",
+    type: "office-desktop",   // matches dropdown "Office"
+    name: "Dell OptiPlex 7040 Desktop & 19\" Monitor",
+    price: "Ksh.24,999",
+    desc: "Intel i5-6500, 8GB RAM, 500GB HDD",
+    img: "img/dellopti.webp"
+  },
+  
   {
     id: 5,
     category: "Printer",
@@ -53,7 +64,7 @@ const products = [
     category: "Printer",
     type: "Canon Printer",   // matches dropdown "Inkjet"
     name: "canon All-in-One",
-    price: "Ksh.20,999",
+    price: "Ksh.23,999",
     desc: "Canon printer, Printing, photocopying/scanning",
     img: "img/canone2.webp"
   },
@@ -71,7 +82,7 @@ const products = [
     category: "Accessory",
     type: "storage",          // matches dropdown "Storage"
     name: "External Drive",
-    price: "Ksh.1,200",
+    price: "Ksh.3,200",
     desc: "Durable SSD Transcend ",
     img: "img/storage2.jpeg"
   },
@@ -82,7 +93,7 @@ const products = [
     name: "Plotter",
     price: "Ksh.43,000",
     desc: "Branding Combo Vinyl Cutting Plotter Contour 2 Feet",
-    img: "img/plotter.jpeg"
+    img: "img/plotter.png"
   },
        {
     id: 10,
@@ -91,7 +102,7 @@ const products = [
     name: "Canon All-in-One",
     price: "Ksh.10,999",
     desc: "Canon printer, WIFI support",
-    img: "img/canon.avif",
+    img: "img/canon25.png",
   },
      {
     id: 11,
@@ -114,7 +125,7 @@ const products = [
     {
     id: 12,
     category: "Accessory",
-    type: "display cable",   // matches dropdown "Inkjet"
+    type: "display",   // matches dropdown "Inkjet"
     name: "VGA display",
     price: "Ksh.500",
     desc: "Computer-monitor VGA display 1M",
@@ -123,7 +134,7 @@ const products = [
     {
     id: 12,
     category: "Accessory",
-    type: "display cable",   // matches dropdown "Inkjet"
+    type: "display",   // matches dropdown "Inkjet"
     name: "HDMI to VGA adapter ",
     price: "Ksh.1,500",
     desc: "1080px for PC/laptop/Desktops",

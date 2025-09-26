@@ -182,7 +182,7 @@ function createProductCard(p) {
 
   const orderBtn = document.createElement("button");
   orderBtn.className = "btn btn-whatsapp flex-grow-1 btn-sm";
-  orderBtn.innerHTML = '<i class="fa fa-whatsapp me-2"></i>Order via WhatsApp';
+  orderBtn.innerHTML = 'Order via WhatsApp';
   orderBtn.onclick = () => sendWhatsAppOrder(p);
 
   btnRow.appendChild(orderBtn);

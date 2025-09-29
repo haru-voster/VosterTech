@@ -18,7 +18,19 @@
   background-color: blue;
   color: white;
 }
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  margin-left: 0;
+  border-radius: 0.25rem;
+  min-width: 10rem;
+}
 
+/* Optional: Add hover effect */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
 
 /* product card */
 .product-card{

@@ -122,8 +122,81 @@ const products = [
     desc: "Epison Printer l3250, (WIFI/bluetooth/USB enabled)",
     img: "img/epison printer.jpeg",
   },
-    {
+   {
+    id: 13.0,
+    category: "Network",
+    type: "kit",   //  
+    name: "Starlink mini-Kit ",
+    price: "Ksh.28,000",
+    desc: "Dual-band Wi-Fi (2.4GHz & 5GHz) Mini Kit with lower power consumption",
+    img: "img/starlink1.webp",
+  },
+     {
+    id: 13.1,
+    category: "Network",
+    type: "kit",   //  
+    name: "Starlink Kit ",
+    price: "Ksh.47,000",
+    desc: "Starlink Standard gen 3 kit v4 Wider 110-degree field of view ",
+    img: "img/starlink.jpg",
+  },
+   {
     id: 13,
+    category: "Network",
+    type: "modems",   // mifi modems  
+    name: "5G mi-fi ",
+    price: "Ksh.4,500",
+    desc: "OLAX MT10 MIFI Wifi Router 5g Lte",
+    img: "img/modem.webp",
+  },
+  
+   {
+    id: 13.0,
+    category: "Network",
+    type: "router",   //  
+    name: "Mikrotik Router",
+    price: "Ksh.37,000",
+    desc: "mikrotik RB4011iGS+RM Gigabit Router-(RB4011iGS-RM)",
+    img: "img/mikrotik1.webp",
+  },
+   {
+    id: 13.1,
+    category: "Network",
+    type: "router",   //  
+    name: " MiFi Portable Wi-Fi Router",
+    price: "Ksh.6,000",
+    desc: "TP-LINK M7200 4G LTE MiFi Portable Wi-Fi Router 8 Hours Long Lasting Battery Black - TL-M7200",
+    img: "img/mikrotik.webp",
+  },
+  {
+    id: 13,
+    category: "Network",
+    type: "switch",   //  
+    name: " ",
+    price: "Ksh.",
+    desc: "",
+    img: "img/",
+  },
+  {
+    id: 13.0,
+    category: "Network",
+    type: "tools",   //  accessories and tools under networks
+    name: " ",
+    price: "Ksh.",
+    desc: "",
+    img: "img/",
+  },
+  {
+    id: 13.1,
+    category: "Network",
+    type: "tools",   //  accessories and tools under networks
+    name: " ",
+    price: "Ksh.",
+    desc: "",
+    img: "img/",
+  },
+    {
+    id: 14,
     category: "Accessory",
     type: "display",   //  
     name: "VGA display",
@@ -132,7 +205,7 @@ const products = [
     img: "img/vga.jpg",
   },
     {
-    id: 14,
+    id: 15,
     category: "Toner",
     type: "epson-toner",   //  
     name: "Epson Toner/ink ",
@@ -152,7 +225,7 @@ const products = [
        {
     id: 15,
     category: "Toner",
-    type: "kyocera",   // matches dropdown "Inkjet"
+    type: "kyocera",   // matches dropdown "monolta"
     name: "Konica minolta laser toner cartridge",
     price: "Ksh.5,000",
     desc: "Konica Minolta TN-217/414 Toner",
@@ -160,7 +233,7 @@ const products = [
   },
     
       {
-    id: 16,
+    id: 15,
     category: "Toner",
     type: "lasertoner",   //  match tonner laser
     name: "HDMI to VGA adapter ",
@@ -169,7 +242,7 @@ const products = [
     img: "img/HDMI-VGA.jpg",
   },
       {
-    id: 17,
+    id: 15,
     category: "Toner",
     type: "canon-toner",   // match toner canon
     name: "Canon Toner ",

@@ -53,7 +53,7 @@ const products = [
   {
     id: 5,
     category: "Printer",
-    type: "inkjet-printer",   // matches dropdown "Inkjet"
+    type: "inkjet-printer",   //  
     name: "HP Inkjet All-in-One",
     price: "Ksh.15,999",
     desc: "Inkjet, Ethernet WIFI support",
@@ -62,7 +62,7 @@ const products = [
     {
     id: 6,
     category: "Printer",
-    type: "Canon Printer",   // matches dropdown "Inkjet"
+    type: "Canon Printer",   //  
     name: "canon All-in-One",
     price: "Ksh.23,999",
     desc: "Canon printer, Printing, photocopying/scanning",
@@ -71,7 +71,7 @@ const products = [
    {
     id: 7,
     category: "Printer",
-    type: "Canon Printer",   // matches dropdown "Inkjet"
+    type: "Canon Printer",   //  
     name: "Canon All-in-One",
     price: "Ksh.10,999",
     desc: "Canon printer, WIFI support",
@@ -98,7 +98,7 @@ const products = [
        {
     id: 10,
     category: "Printer",
-    type: "Canon Printer",   // matches dropdown "Inkjet"
+    type: "Canon Printer",   //  
     name: "Canon All-in-One",
     price: "Ksh.10,999",
     desc: "Canon printer, WIFI support",
@@ -107,7 +107,7 @@ const products = [
      {
     id: 11,
     category: "Printer",
-    type: "Canon Printer",   // matches dropdown "Inkjet"
+    type: "Canon Printer",   //  
     name: "Canon All-in-One",
     price: "Ksh.10,999",
     desc: "Canon printer, WIFI support",
@@ -116,29 +116,66 @@ const products = [
      {
     id: 12,
     category: "Printer",
-    type: "Epison Printer",   // matches dropdown "Inkjet"
+    type: "Epison Printer",   //  
     name: "Epison Printer ",
     price: "Ksh.10,999",
     desc: "Epison Printer l3250, (WIFI/bluetooth/USB enabled)",
     img: "img/epison printer.jpeg",
   },
     {
-    id: 12,
+    id: 13,
     category: "Accessory",
-    type: "display",   // matches dropdown "Inkjet"
+    type: "display",   //  
     name: "VGA display",
     price: "Ksh.500",
     desc: "Computer-monitor VGA display 1M",
     img: "img/vga.jpg",
   },
     {
-    id: 12,
-    category: "Accessory",
-    type: "display",   // matches dropdown "Inkjet"
+    id: 14,
+    category: "Toner",
+    type: "epson-toner",   //  
+    name: "Epson Toner/ink ",
+    price: "ksh. 500",
+    desc: "Epson 103 EcoTank Yellow, Cyan, Magenta Ink Bottles",
+    img: "img/epink.jpg",
+  },
+       {
+    id: 15,
+    category: "Toner",
+    type: "kyocera",   // matches dropdown "Inkjet"
+    name: "kyocera catridge/toner",
+    price: "Ksh.17,000",
+    desc: " Konica Minolta TNP-41 Black Toner Cartridge- color black Page Yield with 5% Coverage",
+    img: "img/minolta.webp",
+  },
+       {
+    id: 15,
+    category: "Toner",
+    type: "kyocera",   // matches dropdown "Inkjet"
+    name: "Konica minolta laser toner cartridge",
+    price: "Ksh.5,000",
+    desc: "Konica Minolta TN-217/414 Toner",
+    img: "img/ky2.jpg",
+  },
+    
+      {
+    id: 16,
+    category: "Toner",
+    type: "lasertoner",   //  match tonner laser
     name: "HDMI to VGA adapter ",
-    price: "Ksh.1,500",
+    price: "Ksh.",
     desc: "1080px for PC/laptop/Desktops",
     img: "img/HDMI-VGA.jpg",
+  },
+      {
+    id: 17,
+    category: "Toner",
+    type: "canon-toner",   // match toner canon
+    name: "Canon Toner ",
+    price: "Ksh. 6,000-6,500",
+    desc: "Canon C-EXV29 / NPG-46 / GPR-31 Toners (Black, Yellow, cyan and magenta)",
+    img: "img/canontoner.jpg",
   },
 ];
 

@@ -346,7 +346,7 @@ const products = [
 const accessories = [
   "img/lenovo2.webp",
   "img/pentium.jpg",
-  "img/plotter.jpeg",
+  "img/modem.webp",
   "img/lap4.jpeg",
 ];
 

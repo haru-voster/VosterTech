@@ -204,10 +204,11 @@ const products = [
     desc: "Computer-monitor VGA display 1M",
     img: "img/vga.jpg",
   },
+  // TONERS AND CARTRIDGES
     {
     id: 15,
     category: "Toner",
-    type: "epson-toner",   //  
+    type: "epson-toner",     
     name: "Epson Toner/ink ",
     price: "ksh. 500",
     desc: "Epson 103 EcoTank Yellow, Cyan, Magenta Ink Bottles",
@@ -216,7 +217,7 @@ const products = [
        {
     id: 15,
     category: "Toner",
-    type: "kyocera",   // matches dropdown "Inkjet"
+    type: "kyocera",   
     name: "kyocera catridge/toner",
     price: "Ksh.17,000",
     desc: " Konica Minolta TNP-41 Black Toner Cartridge- color black Page Yield with 5% Coverage",
@@ -225,7 +226,7 @@ const products = [
        {
     id: 15,
     category: "Toner",
-    type: "kyocera",   // matches dropdown "monolta"
+    type: "kyocera",   
     name: "Konica minolta laser toner cartridge",
     price: "Ksh.5,000",
     desc: "Konica Minolta TN-217/414 Toner",
@@ -235,7 +236,7 @@ const products = [
       {
     id: 15,
     category: "Toner",
-    type: "lasertoner",   //  match tonner laser
+    type: "lasertoner",  
     name: "HDMI to VGA adapter ",
     price: "Ksh.",
     desc: "1080px for PC/laptop/Desktops",
@@ -244,20 +245,109 @@ const products = [
       {
     id: 15,
     category: "Toner",
-    type: "canon-toner",   // match toner canon
+    type: "canon-toner",   
     name: "Canon Toner ",
     price: "Ksh. 6,000-6,500",
     desc: "Canon C-EXV29 / NPG-46 / GPR-31 Toners (Black, Yellow, cyan and magenta)",
     img: "img/canontoner.jpg",
+  },
+  // ACCESSORIES
+  {
+    id: 16.0,
+    category: "Accessories",
+    type: "storage",   
+    name: "HDD DRIVE",
+    price: "ksh. 3,000",
+    desc: "Seegate SATA 500gb Dektop drive",
+    img: "img/storage1.jpeg",
+  },
+   {
+    id: 16.1,
+    category: "Accessories",
+    type: "storage",   
+    name: "FlashDisk",
+    price: "ksh. 2,000",
+    desc: "SanDisk 32GB Cruzer Blade USB Flash Drive",
+    img: "img/scandidk.jpg",
+  },
+  {
+    id: 17.0,
+    category: "Accessories",
+    type: "monitor",   
+    price: "ksh. 5,500",
+    desc: "HP Elitebook 840 G5/G7 14inch laptop Screen",
+    img: "img/screen.webp",
+  },
+  {
+    id: 18.0,
+    category: "Accessories",
+    type: "keyboards",   
+    name: "",
+    price: "",
+    desc: "",
+    img: "img/",
+  },
+    {
+    id: 19.0,
+    category: "Accessories",
+    type: "battery",   
+    name: "Lenovo Battery",
+    price: "Ksh.4,500",
+    desc: "T470 / T480 Series Original Battery( EXTERNAL)",
+    img: "img/battery.webp",
+  },
+    {
+    id: 20.0,
+    category: "Accessories",
+    type: "display",   
+    price: "",
+    desc: "",
+    img: "img/",
+  },
+    {
+    id: 21.0,
+    category: "Accessories",
+    type: "mouse",  
+    name: "",
+    price: "",
+    desc: "",
+    img: "img/",
+  },
+    {
+    id: 22.0,
+    category: "Accessories",
+    type: "motherboard", 
+    name: "",
+    price: "",
+    desc: "",
+    img: "img/",
+  },
+   {
+    id: 22.1,
+    category: "Accessories",
+    type: "charger", 
+    name: "",
+    price: "",
+    desc: "",
+    img: "img/",
+  },
+  {
+    id: 22.1,
+    category: "Accessories",
+    type: "charger", 
+    name: "",
+    price: "",
+    desc: "",
+    img: "img/",
   },
 ];
 
 // accessory images for carousel (unique)
 const accessories = [
   "img/lenovo2.webp",
-  "img/Hp-8200-desktop.jpg",
+  "img/pentium.jpg",
   "img/plotter.jpeg",
-  "img/case.webp"
+  "img/lap4.jpeg",
 ];
 
 function createProductCard(p) {

@@ -51,7 +51,11 @@ const products = [
   {
     id: 6,
     category: "Printer",
+<<<<<<< HEAD
     type: "inkjet-printer", // matches dropdown "Inkjet"
+=======
+    type: "inkjet-printer",   //  
+>>>>>>> 92ab51bf2c5d8fa0d3e4e86f9f2ae1a843959b8d
     name: "HP Inkjet All-in-One",
     price: "Ksh.15,999",
     desc: "Inkjet, Ethernet WIFI support",
@@ -60,8 +64,13 @@ const products = [
   {
     id: 7,
     category: "Printer",
+<<<<<<< HEAD
     type: "Canon Printer", // matches dropdown "Inkjet"
     name: "Canon All-in-One (Pro)",
+=======
+    type: "Canon Printer",   //  
+    name: "canon All-in-One",
+>>>>>>> 92ab51bf2c5d8fa0d3e4e86f9f2ae1a843959b8d
     price: "Ksh.23,999",
     desc: "Canon printer, Printing, photocopying/scanning",
     img: "img/canone2.webp"
@@ -69,7 +78,11 @@ const products = [
   {
     id: 8,
     category: "Printer",
+<<<<<<< HEAD
     type: "Canon Printer", // matches dropdown "Inkjet"
+=======
+    type: "Canon Printer",   //  
+>>>>>>> 92ab51bf2c5d8fa0d3e4e86f9f2ae1a843959b8d
     name: "Canon All-in-One",
     price: "Ksh.10,999",
     desc: "Canon printer, WIFI support",
@@ -93,10 +106,26 @@ const products = [
     desc: "Branding Combo Vinyl Cutting Plotter Contour 2 Feet",
     img: "img/plotter.png"
   },
+<<<<<<< HEAD
   {
     id: 11,
     category: "Printer",
     type: "Canon Printer", // matches dropdown "Inkjet"
+=======
+       {
+    id: 10,
+    category: "Printer",
+    type: "Canon Printer",   //  
+    name: "Canon All-in-One",
+    price: "Ksh.10,999",
+    desc: "Canon printer, WIFI support",
+    img: "img/canon25.png",
+  },
+     {
+    id: 11,
+    category: "Printer",
+    type: "Canon Printer",   //  
+>>>>>>> 92ab51bf2c5d8fa0d3e4e86f9f2ae1a843959b8d
     name: "Canon All-in-One",
     price: "Ksh.10,999",
     desc: "Canon printer, WIFI support",
@@ -105,30 +134,155 @@ const products = [
   {
     id: 12,
     category: "Printer",
+<<<<<<< HEAD
     type: "Epison Printer", // matches dropdown "Inkjet"
     name: "Epison Printer L3250",
+=======
+    type: "Epison Printer",   //  
+    name: "Epison Printer ",
+>>>>>>> 92ab51bf2c5d8fa0d3e4e86f9f2ae1a843959b8d
     price: "Ksh.10,999",
     desc: "Epison Printer L3250 (WIFI/Bluetooth/USB enabled)",
     img: "img/epison printer.jpeg"
   },
+<<<<<<< HEAD
   {
     id: 13,
     category: "Accessory",
     type: "display", // matches dropdown "Display"
     name: "VGA Display",
+=======
+   {
+    id: 13.0,
+    category: "Network",
+    type: "kit",   //  
+    name: "Starlink mini-Kit ",
+    price: "Ksh.28,000",
+    desc: "Dual-band Wi-Fi (2.4GHz & 5GHz) Mini Kit with lower power consumption",
+    img: "img/starlink1.webp",
+  },
+     {
+    id: 13.1,
+    category: "Network",
+    type: "kit",   //  
+    name: "Starlink Kit ",
+    price: "Ksh.47,000",
+    desc: "Starlink Standard gen 3 kit v4 Wider 110-degree field of view ",
+    img: "img/starlink.jpg",
+  },
+   {
+    id: 13,
+    category: "Network",
+    type: "modems",   // mifi modems  
+    name: "5G mi-fi ",
+    price: "Ksh.4,500",
+    desc: "OLAX MT10 MIFI Wifi Router 5g Lte",
+    img: "img/modem.webp",
+  },
+  
+   {
+    id: 13.0,
+    category: "Network",
+    type: "router",   //  
+    name: "Mikrotik Router",
+    price: "Ksh.37,000",
+    desc: "mikrotik RB4011iGS+RM Gigabit Router-(RB4011iGS-RM)",
+    img: "img/mikrotik1.webp",
+  },
+   {
+    id: 13.1,
+    category: "Network",
+    type: "router",   //  
+    name: " MiFi Portable Wi-Fi Router",
+    price: "Ksh.6,000",
+    desc: "TP-LINK M7200 4G LTE MiFi Portable Wi-Fi Router 8 Hours Long Lasting Battery Black - TL-M7200",
+    img: "img/mikrotik.webp",
+  },
+  {
+    id: 13,
+    category: "Network",
+    type: "switch",   //  
+    name: "D-Link switch",
+    price: "Ksh.7,000",
+    desc: "D-LINK DGS-1024D- 24-Port Gigabit Unmanaged Desktop Switch",
+    img: "img/dlink.png",
+  },
+  {
+    id: 13.0,
+    category: "Network",
+    type: "tools",   //  accessories and tools under networks
+    name: " Ethernet cable ",
+    price: "Ksh.300",
+    desc: "1M ETHERNET CABLE PATCH CABLE (High quality)",
+    img: "img/ethernet.jpg",
+  },
+  {
+    id: 13.1,
+    category: "Network",
+    type: "tools",   //  accessories and tools under networks
+    name: "Ethernet Cables ",
+    price: "Ksh.7,000",
+    desc: "Cat 6 ethernet cables - 305 M long box",
+    img: "img/cat6.webp",
+  },
+    {
+    id: 14,
+    category: "Accessory",
+    type: "display",   //  
+    name: "VGA display",
+>>>>>>> 92ab51bf2c5d8fa0d3e4e86f9f2ae1a843959b8d
     price: "Ksh.500",
     desc: "Computer-monitor VGA display 1M",
     img: "img/vga.jpg"
   },
+<<<<<<< HEAD
   {
     id: 14,
     category: "Accessory",
     type: "display", // matches dropdown "Display"
     name: "HDMI to VGA Adapter",
     price: "Ksh.1,500",
+=======
+  // TONERS AND CARTRIDGES
+    {
+    id: 15,
+    category: "Toner",
+    type: "epson-toner",     
+    name: "Epson Toner/ink ",
+    price: "ksh. 500",
+    desc: "Epson 103 EcoTank Yellow, Cyan, Magenta Ink Bottles",
+    img: "img/epink.jpg",
+  },
+       {
+    id: 15,
+    category: "Toner",
+    type: "kyocera",   
+    name: "kyocera catridge/toner",
+    price: "Ksh.17,000",
+    desc: " Konica Minolta TNP-41 Black Toner Cartridge- color black Page Yield with 5% Coverage",
+    img: "img/minolta.webp",
+  },
+       {
+    id: 15,
+    category: "Toner",
+    type: "kyocera",   
+    name: "Konica minolta laser toner cartridge",
+    price: "Ksh.5,000",
+    desc: "Konica Minolta TN-217/414 Toner",
+    img: "img/ky2.jpg",
+  },
+    
+      {
+    id: 15,
+    category: "Toner",
+    type: "lasertoner",  
+    name: "HDMI to VGA adapter ",
+    price: "Ksh.",
+>>>>>>> 92ab51bf2c5d8fa0d3e4e86f9f2ae1a843959b8d
     desc: "1080px for PC/laptop/Desktops",
     img: "img/HDMI-VGA.jpg"
   },
+<<<<<<< HEAD
    {
     id: 14,
     category: "Accessory",
@@ -138,14 +292,114 @@ const products = [
     desc: "1080px for PC/laptop/Desktops",
     img: "img/vga.jpg"
   }
+=======
+      {
+    id: 15,
+    category: "Toner",
+    type: "canon-toner",   
+    name: "Canon Toner ",
+    price: "Ksh. 6,000-6,500",
+    desc: "Canon C-EXV29 / NPG-46 / GPR-31 Toners (Black, Yellow, cyan and magenta)",
+    img: "img/canontoner.jpg",
+  },
+  // ACCESSORIES
+  {
+    id: 16.0,
+    category: "Accessories",
+    type: "storage",   
+    name: "HDD DRIVE",
+    price: "ksh. 3,000",
+    desc: "Seegate SATA 500gb Dektop drive",
+    img: "img/storage1.jpeg",
+  },
+   {
+    id: 16.1,
+    category: "Accessories",
+    type: "storage",   
+    name: "FlashDisk",
+    price: "ksh. 2,000",
+    desc: "SanDisk 32GB Cruzer Blade USB Flash Drive",
+    img: "img/scandidk.jpg",
+  },
+  {
+    id: 17.0,
+    category: "Accessories",
+    type: "monitor",   
+    price: "ksh. 5,500",
+    desc: "HP Elitebook 840 G5/G7 14inch laptop Screen",
+    img: "img/screen.webp",
+  },
+  {
+    id: 18.0,
+    category: "Accessories",
+    type: "keyboards",   
+    name: "",
+    price: "",
+    desc: "",
+    img: "img/",
+  },
+    {
+    id: 19.0,
+    category: "Accessories",
+    type: "battery",   
+    name: "Lenovo Battery",
+    price: "Ksh.4,500",
+    desc: "T470 / T480 Series Original Battery( EXTERNAL)",
+    img: "img/battery.webp",
+  },
+    {
+    id: 20.0,
+    category: "Accessories",
+    type: "display",   
+    price: "",
+    desc: "",
+    img: "img/",
+  },
+    {
+    id: 21.0,
+    category: "Accessories",
+    type: "mouse",  
+    name: "",
+    price: "",
+    desc: "",
+    img: "img/",
+  },
+    {
+    id: 22.0,
+    category: "Accessories",
+    type: "motherboard", 
+    name: "",
+    price: "",
+    desc: "",
+    img: "img/",
+  },
+   {
+    id: 22.1,
+    category: "Accessories",
+    type: "charger", 
+    name: "",
+    price: "",
+    desc: "",
+    img: "img/",
+  },
+  {
+    id: 22.1,
+    category: "Accessories",
+    type: "charger", 
+    name: "",
+    price: "",
+    desc: "",
+    img: "img/",
+  },
+>>>>>>> 92ab51bf2c5d8fa0d3e4e86f9f2ae1a843959b8d
 ];
 
 // accessory images for carousel (unique)
 const accessories = [
   "img/lenovo2.webp",
-  "img/Hp-8200-desktop.jpg",
-  "img/plotter.jpeg",
-  "img/case.webp"
+  "img/pentium.jpg",
+  "img/modem.webp",
+  "img/lap4.jpeg",
 ];
 
 

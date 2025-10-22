@@ -140,9 +140,10 @@ const accessories = [
 ];
 
 
-// 🛒 cart array
-let cart = [];
+// 🛒 cart array (load from localStorage if available)
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+// 🧠 Create product card
 function createProductCard(p) {
   const col = document.createElement("div");
   col.className = "col-12 col-sm-6 col-md-4 col-lg-3";
@@ -176,21 +177,19 @@ function createProductCard(p) {
   // ✅ WhatsApp Order button
   const orderBtn = document.createElement("button");
   orderBtn.className = "btn btn-whatsapp flex-grow-1 btn-sm";
-  orderBtn.innerHTML = 'Order via WhatsApp';
+  orderBtn.innerHTML = "Order via WhatsApp";
   orderBtn.onclick = () => sendWhatsAppOrder(p);
 
-  // ✅ New "Add to Cart" button
+  // ✅ Add to Cart button
   const cartBtn = document.createElement("button");
   cartBtn.className = "btn btn-outline-secondary btn-sm";
   cartBtn.innerHTML = '<i class="fas fa-cart-plus"></i>';
   cartBtn.title = "Add to Cart";
   cartBtn.onclick = () => addToCart(p);
 
-  // append buttons
   btnRow.appendChild(orderBtn);
   btnRow.appendChild(cartBtn);
 
-  // assemble card
   body.appendChild(title);
   body.appendChild(desc);
   body.appendChild(price);
@@ -202,18 +201,32 @@ function createProductCard(p) {
   return col;
 }
 
-// ✅ Add to cart function
+// Add cart
 function addToCart(product) {
-  if (cart.some(item => item.id === product.id)) {
+  if (cart.some((item) => item.id === product.id)) {
     alert(`${product.name} is already in your cart.`);
     return;
   }
   cart.push(product);
+  saveCart();
   alert(`${product.name} added to cart.`);
   updateCartCount();
 }
 
-// ✅ Floating cart icon counter (optional)
+// Remove from Cart
+function removeFromCart(id) {
+  cart = cart.filter((item) => item.id !== id);
+  saveCart();
+  updateCartCount();
+  renderCartItems();
+}
+
+//save cart to localStorage
+function saveCart() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+// Floating cart icon
 function updateCartCount() {
   let cartIcon = document.getElementById("cart-icon");
   if (!cartIcon) {
@@ -229,10 +242,110 @@ function updateCartCount() {
     cartIcon.style.fontWeight = "bold";
     cartIcon.style.cursor = "pointer";
     cartIcon.style.zIndex = "9999";
+    cartIcon.addEventListener("click", showCartModal);
     document.body.appendChild(cartIcon);
   }
   cartIcon.innerHTML = `🛒 ${cart.length}`;
 }
+
+// Show Cart Modal
+function showCartModal() {
+  let modal = document.getElementById("cart-modal");
+  if (!modal) {
+    modal = document.createElement("div");
+    modal.id = "cart-modal";
+    modal.style.position = "fixed";
+    modal.style.right = "20px";
+    modal.style.top = "70px";
+    modal.style.background = "white";
+    modal.style.border = "1px solid #ccc";
+    modal.style.borderRadius = "10px";
+    modal.style.padding = "15px";
+    modal.style.width = "300px";
+    modal.style.boxShadow = "0 4px 10px rgba(0,0,0,0.2)";
+    modal.style.zIndex = "9999";
+
+  modal.innerHTML = `
+      <h5>Your Cart</h5>
+      <ul id="cart-items" style="list-style:none; padding:0; max-height:200px; overflow-y:auto;"></ul>
+      <p id="cart-total" style="font-weight:bold;">Total: Ksh.0</p>
+      <div class="d-flex justify-content-between mt-2">
+        <button id="order-cart" class="btn btn-sm btn-success">Order via WhatsApp</button>
+        <button id="close-cart" class="btn btn-sm btn-danger">Close</button>
+      </div>
+    `;
+    document.body.appendChild(modal);
+
+    document.getElementById("close-cart").onclick = () => {
+      modal.style.display = "none";
+    };
+
+    // 
+    document.getElementById("order-cart").onclick = sendCartOrder;
+  }
+
+  renderCartItems();
+  modal.style.display = "block";
+}
+
+// 
+function renderCartItems() {
+  const cartItems = document.getElementById("cart-items");
+  const cartTotal = document.getElementById("cart-total");
+
+  cartItems.innerHTML = "";
+  let total = 0;
+
+  cart.forEach((item) => {
+    const li = document.createElement("li");
+    li.style.display = "flex";
+    li.style.justifyContent = "space-between";
+    li.style.alignItems = "center";
+    li.style.marginBottom = "8px";
+    li.innerHTML = `
+      <span>${item.name}</span>
+      <span>${item.price}</span>
+      <button class="btn btn-sm btn-outline-danger" onclick="removeFromCart(${item.id})">x</button>
+    `;
+    cartItems.appendChild(li);
+
+    const num = parseInt(item.price.replace(/\D/g, ""));
+    total += num || 0;
+  });
+
+  cartTotal.textContent = `Total: Ksh.${total.toLocaleString()}`;
+}
+
+// 
+function sendWhatsAppOrder(product) {
+  const phone = "254708466793"; 
+  const message = `Hello, I'm interested in this item:\n\n🖥 *${product.name}*\n💰 ${product.price}\n📃 ${product.desc}`;
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+}
+
+// Send all items in cart to WhatsApp
+function sendCartOrder() {
+  if (cart.length === 0) {
+    alert("Your cart is empty!");
+    return;
+  }
+
+  const phone = "254708466793"; //
+  let message = "🛒 *Order Summary:*\n\n";
+  cart.forEach((item, i) => {
+    message += `${i + 1}. *${item.name}*\n💰 ${item.price}\n📃 ${item.desc}\n\n`;
+  });
+
+  const total = cart.reduce((sum, item) => sum + parseInt(item.price.replace(/\D/g, "")), 0);
+  message += `*Total: Ksh.${total.toLocaleString()}*\n\nThank you for shopping with VosterTech!`;
+
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+}
+
+// 🟢 Initialize cart count on load
+window.addEventListener("DOMContentLoaded", updateCartCount);
 
 // existing WhatsApp order function
 function sendWhatsAppOrder(product) {

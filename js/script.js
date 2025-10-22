@@ -134,24 +134,12 @@ const products = [
   {
     id: 12,
     category: "Printer",
-<<<<<<< HEAD
-    type: "Epison Printer", // matches dropdown "Inkjet"
-    name: "Epison Printer L3250",
-=======
     type: "Epison Printer",   //  
     name: "Epison Printer ",
->>>>>>> 92ab51bf2c5d8fa0d3e4e86f9f2ae1a843959b8d
     price: "Ksh.10,999",
     desc: "Epison Printer L3250 (WIFI/Bluetooth/USB enabled)",
     img: "img/epison printer.jpeg"
   },
-<<<<<<< HEAD
-  {
-    id: 13,
-    category: "Accessory",
-    type: "display", // matches dropdown "Display"
-    name: "VGA Display",
-=======
    {
     id: 13.0,
     category: "Network",
@@ -230,19 +218,10 @@ const products = [
     category: "Accessory",
     type: "display",   //  
     name: "VGA display",
->>>>>>> 92ab51bf2c5d8fa0d3e4e86f9f2ae1a843959b8d
     price: "Ksh.500",
     desc: "Computer-monitor VGA display 1M",
     img: "img/vga.jpg"
   },
-<<<<<<< HEAD
-  {
-    id: 14,
-    category: "Accessory",
-    type: "display", // matches dropdown "Display"
-    name: "HDMI to VGA Adapter",
-    price: "Ksh.1,500",
-=======
   // TONERS AND CARTRIDGES
     {
     id: 15,
@@ -278,21 +257,9 @@ const products = [
     type: "lasertoner",  
     name: "HDMI to VGA adapter ",
     price: "Ksh.",
->>>>>>> 92ab51bf2c5d8fa0d3e4e86f9f2ae1a843959b8d
     desc: "1080px for PC/laptop/Desktops",
     img: "img/HDMI-VGA.jpg"
   },
-<<<<<<< HEAD
-   {
-    id: 14,
-    category: "Accessory",
-    type: "display", // matches dropdown "Display"
-    name: "HDMI to VGA Adapter",
-    price: "Ksh.1,500",
-    desc: "1080px for PC/laptop/Desktops",
-    img: "img/vga.jpg"
-  }
-=======
       {
     id: 15,
     category: "Toner",
@@ -391,7 +358,6 @@ const products = [
     desc: "",
     img: "img/",
   },
->>>>>>> 92ab51bf2c5d8fa0d3e4e86f9f2ae1a843959b8d
 ];
 
 // accessory images for carousel (unique)

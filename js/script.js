@@ -170,7 +170,7 @@ const accessories = [
 ];
 
 
-// 🛒 cart array (load from localStorage if available)
+// 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // 🧠 Create product card
@@ -431,6 +431,31 @@ document.addEventListener("DOMContentLoaded", function() {
       e.preventDefault();
       const type = this.dataset.filter;
       renderProducts(type);
+    });
+  });
+});
+
+function showPopup(imgSrc, name, price, desc) {
+  document.getElementById("popup-img").src = imgSrc;
+  document.getElementById("popup-name").textContent = name;
+  document.getElementById("popup-price").textContent = price;
+  document.getElementById("popup-desc").textContent = desc;
+  document.getElementById("image-popup").style.display = "flex";
+}
+
+function hidePopup() {
+  document.getElementById("image-popup").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".product-img").forEach(img => {
+    img.addEventListener("click", () => {
+      showPopup(
+        img.src,
+        img.getAttribute("data-name"),
+        img.getAttribute("data-price"),
+        img.getAttribute("data-desc")
+      );
     });
   });
 });

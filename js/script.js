@@ -4,36 +4,55 @@ const SELLER_PHONE = "254708466793";
 // product data (same as yours)
 const products = [
   {
-    id: 1,
+    id: 1.1,
     category: "Laptop",
-    type: "business-laptop", // matches dropdown "Office"
+    type: "hp", // HP"
     name: "New Brand HP Envy X360",
     price: "Ksh.170,000",
     desc: "Intel Iris Xe Graphics, Backlight Keyboard, 14 inch FHD, 13th Gen Core i7, 16GB, 1TB SSD",
     img: "img/hp envy.jpg"
   },
-  {
-    id: 2,
+    {
+    id: 1.2,
     category: "Laptop",
-    type: "business-laptop", // matches dropdown "Office"
-    name: "Lenovo IdeaPad",
-    price: "Ksh.39,000",
-    desc: "Lenovo IdeaPad Flex 5 : Integrated Intel Iris Xe graphics 512SSD / 16GB",
-    img: "img/lenovo2.webp"
-  },
-  {
-    id: 3,
-    category: "Laptop",
-    type: "business-laptop", // matches dropdown "Business"
+    type: "hp", // HP"
     name: "HP EliteBook",
     price: "Ksh.30,000",
     desc: "Intel Core i7 10th Gen, 14\" FHD 840 G5 - 8GB / 256GB",
     img: "img/new2.jpg"
   },
-  {
-    id: 4,
+    {
+    id: 1.3,
     category: "Laptop",
-    type: "business-laptop", // matches dropdown "Business"
+    type: "hp", // hp 
+    name: "HP EliteBook",
+    price: "Ksh.45,000",
+    desc: "Intel Core i7 10th Gen, 14\" FHD 840 G7 - 16GB / 512GB",
+    img: "img/new.webp"
+  },
+  {
+    id: 2.1,
+    category: "Laptop",
+    type: "lenovo", // matches dropdown "Office"
+    name: "Lenovo IdeaPad",
+    price: "Ksh.39,000",
+    desc: "Lenovo IdeaPad Flex 5 : Integrated Intel Iris Xe graphics 512SSD / 16GB",
+    img: "img/lenovo2.webp"
+  },
+
+  {
+    id: 2.2,
+    category: "Laptop",
+    type: "lenovo", // matches dropdown "Business"
+    name: "Lenovo Yoga",
+    price: "Ksh.22,999",
+    desc: "Lenovo Thinkpad X1 Yoga 256/8GB RAM Gen5 14 inch FHD, Touchscreen Laptop",
+    img: "img/lenovo.webp"
+  },
+    {
+    id: 2.2,
+    category: "Laptop",
+    type: "lenovo", // matches dropdown "Business"
     name: "Lenovo Yoga",
     price: "Ksh.22,999",
     desc: "Lenovo Thinkpad X1 Yoga 256/8GB RAM Gen5 14 inch FHD, Touchscreen Laptop",
@@ -158,6 +177,25 @@ const products = [
     price: "Ksh,1,500",
     desc: "PC desktop motherboard with fan",
     img: "img/comp_repair.jpg"
+  }
+     ,
+  {
+    id: 15.3,
+    category: "Accessory",
+    type: "mice", 
+    name: "wireless mouse",
+    price: "Ksh,600",
+    desc: "Wireless + Bluetooth mouse ",
+    img: "img/mouse.webp"
+  },
+    {
+    id: 15.4,
+    category: "Accessory",
+    type: "charger", 
+    name: "Laptop Charger",
+    price: "Ksh 1,500",
+    desc: "HP 19.5V-2.31A 45W Blue Pin Adapter Original",
+    img: "img/hpcharger.webp"
   }
 ];
 
@@ -479,13 +517,13 @@ function showPopup(imgSrc, name, price, desc) {
   const popupDesc = document.getElementById("popup-desc");
   const popupButtons = document.getElementById("popup-buttons");
 
-  // ✅ Fill popup content
+  // 
   popupImg.src = imgSrc;
   popupName.textContent = name;
   popupPrice.textContent = price;
   popupDesc.textContent = desc;
 
-  // ✅ Add WhatsApp + Cart buttons
+  // WhatsApp + Cart buttons
   popupButtons.innerHTML = `
     <button class="cart-btn" onclick="addToCart('${name}', '${price}')">
       🛒 Add to Cart
@@ -496,8 +534,6 @@ function showPopup(imgSrc, name, price, desc) {
       💬 Chat on WhatsApp
     </a>
   `;
-
-  // ✅ Show popup
   popup.style.display = "flex";
 }
 

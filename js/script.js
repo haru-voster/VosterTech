@@ -154,10 +154,10 @@ const products = [
     id: 15.2,
     category: "Accessory",
     type: "keyboard", 
-    name: " USB Keyboard",
+    name: " PC Motherboard + fan",
     price: "Ksh,1,500",
-    desc: "Logitech K120 Wired Keyboard for Windows, Plug and Play",
-    img: "img/wired.jpg"
+    desc: "PC desktop motherboard with fan",
+    img: "img/comp_repair.jpg"
   }
 ];
 

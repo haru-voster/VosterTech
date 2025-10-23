@@ -321,9 +321,7 @@ body {
   #modalDesc { margin-top: 15px; }
   /* aded 
   */
-  
-/* overal image layout */
-.popup-overlay {
+  .popup-overlay {
     display: none;
     position: fixed;
     top: 0; left: 0;
@@ -361,3 +359,13 @@ body {
     from {transform: scale(0.8); opacity: 0;}
     to {transform: scale(1); opacity: 1;}
   }
+
+
+.close-btn:hover {
+  color: #007bff;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

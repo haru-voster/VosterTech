@@ -139,6 +139,26 @@ const products = [
     desc: "Logitech K120 Wired Keyboard for Windows, Plug and Play",
     img: "img/wired.jpg"
   }
+  ,
+  {
+    id: 15.1,
+    category: "Accessory",
+    type: "motherboard", 
+    name: " Dell motherboard ",
+    price: "Ksh,10,500",
+    desc: "Dell latitude E5520 motherboard",
+    img: "img/motherboard1.jpg"
+  }
+    ,
+  {
+    id: 15.2,
+    category: "Accessory",
+    type: "keyboard", 
+    name: " USB Keyboard",
+    price: "Ksh,1,500",
+    desc: "Logitech K120 Wired Keyboard for Windows, Plug and Play",
+    img: "img/wired.jpg"
+  }
 ];
 
 // accessory images for carousel (unique)

@@ -490,7 +490,7 @@ function showPopup(imgSrc, name, price, desc) {
     <button class="cart-btn" onclick="addToCart('${name}', '${price}')">
       🛒 Add to Cart
     </button>
-    <a href="https://wa.me/254712345678?text=Hello!%20I'm%20interested%20in%20${encodeURIComponent(name)}%20priced%20at%20${encodeURIComponent(price)}"
+    <a href="https://wa.me/254708466793?text=Hello!%20I'm%20interested%20in%20${encodeURIComponent(name)}%20priced%20at%20${encodeURIComponent(price)}"
        target="_blank"
        class="whatsapp-btn">
       💬 Chat on WhatsApp

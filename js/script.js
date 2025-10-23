@@ -76,6 +76,24 @@ const products = [
     desc: "lenovo thinkpad 4gb/128ssd coi5 6th gen intel processor speed 2.0ghz",
     img: "img/dell.jpeg"
   },
+   {
+    id: 4.0,
+    category: "Laptop",
+    type: "macbook-laptop", // matches dropdown "macbook"
+    name: "Macbook pro A1708 ",
+    price: "Ksh.29,000",
+    desc: "Apple Macbook Pro A1708 Intel Core i5-6360U 8GB RAM 256GB SSD ROM 13.3 LED IPS Display Intel Iris Graphics ",
+    img: "img/macbook2017.webp"
+  },
+     {
+    id: 4.1,
+    category: "Laptop",
+    type: "macbook-laptop", // matches dropdown "macbook"
+    name: "Macbook Retina",
+    price: "Ksh.88,000",
+    desc: "Macbook Pro 13” (2020) Intel Core I7 |13th gen| 32gb Ram | 512gb Ssd | Retina Display",
+    img: "img/mac1.jpg"
+  },
   {
     id: 5,
     category: "Desktop",

@@ -50,13 +50,13 @@ const products = [
     img: "img/lenovo.webp"
   },
     {
-    id: 2.2,
+    id: 2.3,
     category: "Laptop",
     type: "lenovo", // matches dropdown "Business"
-    name: "Lenovo Yoga",
-    price: "Ksh.22,999",
-    desc: "Lenovo Thinkpad X1 Yoga 256/8GB RAM Gen5 14 inch FHD, Touchscreen Laptop",
-    img: "img/lenovo.webp"
+    name: "Lenovo Thinkpad",
+    price: "Ksh.14,999",
+    desc: "lenovo thinkpad 4gb/128ssd coi5 6th gen intel processor speed 2.0ghz",
+    img: "img/lenovo2.jpg"
   },
   {
     id: 5,

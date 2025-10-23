@@ -129,6 +129,16 @@ const products = [
     desc: "1080px for PC/laptop/Desktops",
     img: "img/HDMI-VGA.jpg"
   }
+  ,
+  {
+    id: 15,
+    category: "Accessory",
+    type: "keyboard", // matches dropdown "Display"
+    name: " USB Keyboard",
+    price: "Ksh,1,500",
+    desc: "Logitech K120 Wired Keyboard for Windows, Plug and Play",
+    img: "img/wired.jpg"
+  }
 ];
 
 // accessory images for carousel (unique)

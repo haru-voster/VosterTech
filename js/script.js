@@ -6,7 +6,7 @@ const products = [
   {
     id: 1.1,
     category: "Laptop",
-    type: "hp", // HP"
+    type: "hp-laptop", // HP"
     name: "New Brand HP Envy X360",
     price: "Ksh.170,000",
     desc: "Intel Iris Xe Graphics, Backlight Keyboard, 14 inch FHD, 13th Gen Core i7, 16GB, 1TB SSD",
@@ -15,7 +15,7 @@ const products = [
     {
     id: 1.2,
     category: "Laptop",
-    type: "hp", // HP"
+    type: "hp-laptop", // HP"
     name: "HP EliteBook",
     price: "Ksh.30,000",
     desc: "Intel Core i7 10th Gen, 14\" FHD 840 G5 - 8GB / 256GB",
@@ -24,7 +24,7 @@ const products = [
     {
     id: 1.3,
     category: "Laptop",
-    type: "hp", // hp 
+    type: "hp-laptop", // hp 
     name: "HP EliteBook",
     price: "Ksh.45,000",
     desc: "Intel Core i7 10th Gen, 14\" FHD 840 G7 - 16GB / 512GB",
@@ -33,7 +33,7 @@ const products = [
   {
     id: 2.1,
     category: "Laptop",
-    type: "lenovo", // matches dropdown "Office"
+    type: "lenovo-laptop", // matches dropdown "lenovo"
     name: "Lenovo IdeaPad",
     price: "Ksh.39,000",
     desc: "Lenovo IdeaPad Flex 5 : Integrated Intel Iris Xe graphics 512SSD / 16GB",
@@ -43,7 +43,7 @@ const products = [
   {
     id: 2.2,
     category: "Laptop",
-    type: "lenovo", // matches dropdown "Business"
+    type: "lenovo-laptop", 
     name: "Lenovo Yoga",
     price: "Ksh.22,999",
     desc: "Lenovo Thinkpad X1 Yoga 256/8GB RAM Gen5 14 inch FHD, Touchscreen Laptop",
@@ -52,11 +52,29 @@ const products = [
     {
     id: 2.3,
     category: "Laptop",
-    type: "lenovo", // matches dropdown "Business"
+    type: "lenovo-laptop", // matches dropdown "Business"
     name: "Lenovo Thinkpad",
     price: "Ksh.14,999",
     desc: "lenovo thinkpad 4gb/128ssd coi5 6th gen intel processor speed 2.0ghz",
     img: "img/lenovo2.jpg"
+  },
+    {
+    id: 3.1,
+    category: "Laptop",
+    type: "dell-laptop", // matches dropdown "dell"
+    name: "Dell latitude",
+    price: "Ksh.20,999",
+    desc: "dell latitude 7490 |intel core i5| 8gb ram |256gb ssd |8th generation|14 inch display",
+    img: "img/dell.jpg"
+  },
+   {
+    id: 3.2,
+    category: "Laptop",
+    type: "dell-laptop", // matches dropdown "dell"
+    name: "Dell Precision 5570 coi5-12800h, 8gb/256gb SSD ",
+    price: "Ksh.24,999",
+    desc: "lenovo thinkpad 4gb/128ssd coi5 6th gen intel processor speed 2.0ghz",
+    img: "img/dell.jpeg"
   },
   {
     id: 5,

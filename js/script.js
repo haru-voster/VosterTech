@@ -434,20 +434,28 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
-
-function showPopup(imgSrc, name, price, desc) {
-  document.getElementById("popup-img").src = imgSrc;
-  document.getElementById("popup-name").textContent = name;
-  document.getElementById("popup-price").textContent = price;
-  document.getElementById("popup-desc").textContent = desc;
-  document.getElementById("image-popup").style.display = "flex";
-}
-
-function hidePopup() {
-  document.getElementById("image-popup").style.display = "none";
-}
-
 document.addEventListener("DOMContentLoaded", () => {
+  const productGrid = document.getElementById("productGrid");
+
+  // Render products
+  productGrid.innerHTML = products.map(product => `
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100 text-center shadow-sm">
+        <img src="${product.img}" 
+             class="card-img-top product-img"
+             alt="${product.name}"
+             data-name="${product.name}"
+             data-price="${product.price}"
+             data-desc="${product.desc}">
+        <div class="card-body">
+          <h6>${product.name}</h6>
+          <p>${product.price}</p>
+        </div>
+      </div>
+    </div>
+  `).join("");
+
+  // Add popup listeners
   document.querySelectorAll(".product-img").forEach(img => {
     img.addEventListener("click", () => {
       showPopup(
@@ -459,3 +467,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Popup functions
+function showPopup(imgSrc, name, price, desc) {
+  document.getElementById("popup-img").src = imgSrc;
+  document.getElementById("popup-name").textContent = name;
+  document.getElementById("popup-price").textContent = price;
+  document.getElementById("popup-desc").textContent = desc;
+  document.getElementById("image-popup").style.display = "flex";
+}
+
+function hidePopup() {
+  document.getElementById("image-popup").style.display = "none";
+}

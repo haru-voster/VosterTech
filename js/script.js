@@ -434,6 +434,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const productGrid = document.getElementById("productGrid");
 
@@ -446,10 +448,11 @@ document.addEventListener("DOMContentLoaded", () => {
              alt="${product.name}"
              data-name="${product.name}"
              data-price="${product.price}"
-             data-desc="${product.desc}">
+             data-desc="${product.desc}"
+             data-img="${product.img}">
         <div class="card-body">
           <h6>${product.name}</h6>
-          <p>${product.price}</p>
+          <p class="text-success fw-bold">${product.price}</p>
         </div>
       </div>
     </div>
@@ -468,13 +471,34 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Popup functions
 function showPopup(imgSrc, name, price, desc) {
-  document.getElementById("popup-img").src = imgSrc;
-  document.getElementById("popup-name").textContent = name;
-  document.getElementById("popup-price").textContent = price;
-  document.getElementById("popup-desc").textContent = desc;
-  document.getElementById("image-popup").style.display = "flex";
+  const popup = document.getElementById("image-popup");
+  const popupImg = document.getElementById("popup-img");
+  const popupName = document.getElementById("popup-name");
+  const popupPrice = document.getElementById("popup-price");
+  const popupDesc = document.getElementById("popup-desc");
+  const popupButtons = document.getElementById("popup-buttons");
+
+  // ✅ Fill popup content
+  popupImg.src = imgSrc;
+  popupName.textContent = name;
+  popupPrice.textContent = price;
+  popupDesc.textContent = desc;
+
+  // ✅ Add WhatsApp + Cart buttons
+  popupButtons.innerHTML = `
+    <button class="cart-btn" onclick="addToCart('${name}', '${price}')">
+      🛒 Add to Cart
+    </button>
+    <a href="https://wa.me/254712345678?text=Hello!%20I'm%20interested%20in%20${encodeURIComponent(name)}%20priced%20at%20${encodeURIComponent(price)}"
+       target="_blank"
+       class="whatsapp-btn">
+      💬 Chat on WhatsApp
+    </a>
+  `;
+
+  // ✅ Show popup
+  popup.style.display = "flex";
 }
 
 function hidePopup() {

@@ -155,15 +155,21 @@
       </section>
 
       <!-- Image Popup -->
-      <div id="image-popup" class="popup-overlay" onclick="hidePopup()">
-        <div class="popup-content" onclick="event.stopPropagation()">
-          <button class="close-btn" onclick="hidePopup()">×</button>
-          <img id="popup-img" src="" alt="Product Image">
-          <h5 id="popup-name"></h5>
-          <p id="popup-price" class="fw-bold text-success"></p>
-          <p id="popup-desc" class="text-muted"></p>
-        </div>
-      </div>
+  <!-- Image Popup -->
+<div id="image-popup" class="popup-overlay" onclick="hidePopup()">
+  <div class="popup-content" onclick="event.stopPropagation()">
+    <button class="close-btn" onclick="hidePopup()">×</button>
+    <img id="popup-img" src="" alt="Product Image" class="popup-img">
+    <h5 id="popup-name"></h5>
+    <p id="popup-price" class="fw-bold text-success"></p>
+    <p id="popup-desc" class="text-muted"></p>
+
+    <!-- Buttons area -->
+    <div id="popup-buttons" class="popup-buttons"></div>
+  </div>
+</div>
+
+
 
       <!-- Accessories -->
       <section id="accessories" class="mt-5">
@@ -212,6 +218,7 @@
       </div>
     </div>
   </footer>
+
 
 
   <!-- Bootstrap JS -->

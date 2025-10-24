@@ -94,8 +94,26 @@ const products = [
     desc: "Macbook Pro 13” (2020) Intel Core I7 |13th gen| 32gb Ram | 512gb Ssd | Retina Display",
     img: "img/mac1.jpg"
   },
+       {
+    id: 5.1,
+    category: "Laptop",
+    type: "ultra-laptop", // matches "chromebook"
+    name: "HP Chromebook",
+    price: "Ksh.10,000",
+    desc: "Hp Chromebook 11 G3 X360 Intel Celeron 4GB RAM 32GB SSD 11.6″ Touchscreen",
+    img: "img/hpchrome.webp"
+  },
+      {
+    id: 5.2,
+    category: "Laptop",
+    type: "ultra-laptop", // matches "chromebook"
+    name: "Dell Chromebook",
+    price: "Ksh.10,500",
+    desc: "Dell Chromebook 11 3190 x360 Intel Celeron 4GB RAM 32GB SSD 11.6″ Touch Screen",
+    img: "img/dellchrome.avif"
+  },
   {
-    id: 5,
+    id: 6,
     category: "Desktop",
     type: "office-desktop", // matches dropdown "Office"
     name: "Dell OptiPlex 7040 Desktop & 19\" Monitor",

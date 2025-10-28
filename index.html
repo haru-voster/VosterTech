@@ -136,13 +136,64 @@
   </nav>
 
   <!-- Hero -->
-  <header class="py-5 bg-light text-center">
-    <div class="container">
-      <h1 class="display-6 text-primary fw-bold">VosterTech — Computers, Laptops, Printers & Accessories</h1>
-      <p class="lead text-success fw-bold">Order via WhatsApp. Fast replies. Local delivery available.</p>
-      <p class="display-6 text-primary">Call Now: <strong>0708466793</strong></p>
-    </div>
-  </header>
+ <!-- Hero -->
+<header class="hero-section text-center text-white d-flex align-items-center justify-content-center position-relative overflow-hidden">
+  <!-- Floating Images -->
+  <img src="img/hp.jpeg" alt="Laptop" class="hero-img hero-img-left">
+  <img src="img/epison printer.jpeg" alt="Printer" class="hero-img hero-img-right">
+
+  <div class="container py-5">
+    <h1 class="display-5 fw-bold mb-3 animate__animated animate__fadeInDown" style="color: #007bff;">
+      VosterTech — Computers, Laptops, Printers & Accessories
+    </h1>
+    <p class="lead fw-semibold text-warning animate__animated animate__fadeInUp">
+      Order via WhatsApp. Fast replies. Local delivery available.
+    </p>
+    <p class="fs-3 fw-bold mt-3 text-light animate__animated animate__fadeInUp">
+      Call Now: <a href="tel:+254708466793" class="text-warning text-decoration-none">0708466793</a>
+    </p>
+    <a href="#products" class="btn btn-success btn-lg mt-3 shadow-sm">
+      <i class="fa fa-shopping-cart me-2"></i>Shop Now
+    </a>
+  </div>
+  <style>
+    .hero-img {
+  position: absolute;
+  width: 250px;
+  opacity: 0.9;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero-img-left {
+  left: 3%;
+  bottom: 5%;
+  animation: floatLeft 6s ease-in-out infinite;
+}
+
+.hero-img-right {
+  right: 3%;
+  top: 10%;
+  animation: floatRight 6s ease-in-out infinite;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes floatLeft {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes floatRight {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+  </style>
+</header>
+
 
   <!-- Product Grid -->
   <main class="py-5">

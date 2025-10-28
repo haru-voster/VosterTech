@@ -275,7 +275,7 @@ const products = [
 const accessories = [
   "img/lenovo2.webp",
   "img/Hp-8200-desktop.jpg",
-  "img/plotter.jpeg",
+  "img/hp.jpeg",
   "img/case.webp"
 ];
 

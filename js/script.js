@@ -272,16 +272,50 @@ const products = [
 ];
 
 // accessory images for carousel (unique)
-const accessories = [
-  "img/lenovo2.webp",
-  "img/Hp-8200-desktop.jpg",
-  "img/hp.jpeg",
-  "img/case.webp"
-];
+
+document.addEventListener("DOMContentLoaded", () => {
+  // 🛑 List of sold out products with images
+  const soldOutItems = [
+    { name: "Lenovo ThinkPad X250", img: "img/lenovo2.webp" },
+    { name: "HP 8200 Desktop", img: "img/Hp-8200-desktop.jpg" },
+    { name: "HP Probook 450", img: "img/hp.jpeg" },
+    { name: "Computer Case with PSU", img: "img/case.webp" }
+  ];
+
+  const soldOutPopup = document.getElementById("sold-out-popup");
+  let currentIndex = 0;
+
+  function showSoldOutPopup() {
+    const item = soldOutItems[currentIndex];
+    soldOutPopup.innerHTML = `
+      <img src="${item.img}" alt="${item.name}">
+      <span>${item.name} — <strong>SOLD OUT</strong></span>
+    `;
+    soldOutPopup.style.display = "flex";
+
+    // Fade in
+    setTimeout(() => {
+      soldOutPopup.style.opacity = "1";
+    }, 100);
+
+    // Fade out after 2.5 seconds
+    setTimeout(() => {
+      soldOutPopup.style.opacity = "0";
+    }, 2500);
+
+    // Hide and show next item
+    setTimeout(() => {
+      soldOutPopup.style.display = "none";
+      currentIndex = (currentIndex + 1) % soldOutItems.length;
+      showSoldOutPopup();
+    }, 3200);
+  }
+
+  // rotating automatically
+  showSoldOutPopup();
+});
 
 
-// 
-// ==========================================
 // 🛒 CART + POPUP + CATEGORY FILTER SYSTEM
 // ==========================================
 

@@ -18,7 +18,7 @@ const products = [
     type: "hp-laptop", // HP"
     name: "HP EliteBook",
     price: "Ksh.30,000",
-    desc: "Intel Core i7 10th Gen, 14\" FHD 840 G5 - 8GB / 256GB",
+    desc: "Intel Core i7 10th Gen, 14 FHD 840 G5 - 8GB / 256GB",
     img: "img/new2.jpg"
   },
     {
@@ -115,11 +115,11 @@ const products = [
   {
     id: 6.0,
     category: "Desktop",
-    type: "dell-desktop", // matches dropdown "Office"
-    name: "Dell OptiPlex 7040 Desktop & 19\" Monitor",
-    price: "Ksh.24,999",
-    desc: "Intel i5-6500, 8GB RAM, 500GB HDD",
-    img: "img/dellopti.webp"
+    type: "hp-desktop", // matches dropdown "Office"
+    name: "HP Desktop & 19\" Monitor",
+    price: "Ksh.14,500",
+    desc: "HP Desktop CPU Intel Core i5 3.40GHz 4GB Ram 500GB HDD 19″ TFT Keyboard & Mouse Complete set",
+    img: "img/Hp-desk.jpg"
   },
     {
     id: 6.1,
@@ -545,7 +545,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const productGrid = document.getElementById("productGrid");
 
@@ -571,17 +570,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add popup listeners
   document.querySelectorAll(".product-img").forEach(img => {
     img.addEventListener("click", () => {
-      showPopup(
-        img.src,
-        img.getAttribute("data-name"),
-        img.getAttribute("data-price"),
-        img.getAttribute("data-desc")
-      );
+      const product = {
+        img: img.getAttribute("data-img"),
+        name: img.getAttribute("data-name"),
+        price: img.getAttribute("data-price"),
+        desc: img.getAttribute("data-desc")
+      };
+      showPopup(product);
     });
   });
 });
 
-function showPopup(imgSrc, name, price, desc) {
+function showPopup(product) {
   const popup = document.getElementById("image-popup");
   const popupImg = document.getElementById("popup-img");
   const popupName = document.getElementById("popup-name");
@@ -589,26 +589,50 @@ function showPopup(imgSrc, name, price, desc) {
   const popupDesc = document.getElementById("popup-desc");
   const popupButtons = document.getElementById("popup-buttons");
 
-  // 
-  popupImg.src = imgSrc;
-  popupName.textContent = name;
-  popupPrice.textContent = price;
-  popupDesc.textContent = desc;
+  // Fill popup
+  popupImg.src = product.img;
+  popupName.textContent = product.name;
+  popupPrice.textContent = product.price;
+  popupDesc.textContent = product.desc;
 
-  // WhatsApp + Cart buttons
+  // WhatsApp + Cart buttons (no undefined)
   popupButtons.innerHTML = `
-    <button class="cart-btn" onclick="addToCart('${name}', '${price}')">
-      🛒 Add to Cart
-    </button>
-    <a href="https://wa.me/254708466793?text=Hello!%20I'm%20interested%20in%20${encodeURIComponent(name)}%20priced%20at%20${encodeURIComponent(price)}"
+    <button class="cart-btn" id="addCartBtn">🛒 Add to Cart</button>
+    <a href="https://wa.me/254708466793?text=Hello!%20I'm%20interested%20in%20${encodeURIComponent(product.name)}%20priced%20at%20${encodeURIComponent(product.price)}"
        target="_blank"
        class="whatsapp-btn">
       💬 Chat on WhatsApp
     </a>
   `;
+
+  // ✅ Attach event listener dynamically
+  document.getElementById("addCartBtn").addEventListener("click", () => {
+    addToCart(product);
+  });
+
   popup.style.display = "flex";
 }
 
 function hidePopup() {
   document.getElementById("image-popup").style.display = "none";
+}
+
+// add to cart
+function addToCart(product) {
+  if (!product || !product.name || !product.price) {
+    alert("Error: Missing product details.");
+    console.error("Invalid product data:", product);
+    return;
+  }
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const exists = cart.find(item => item.name === product.name);
+
+  if (exists) {
+    alert(`${product.name} is already in your cart.`);
+  } else {
+    cart.push(product);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(`${product.name} added to your cart.`);
+  }
 }

@@ -113,20 +113,38 @@ const products = [
     img: "img/dellchrome.avif"
   },
   {
-    id: 6,
+    id: 6.0,
     category: "Desktop",
-    type: "office-desktop", // matches dropdown "Office"
+    type: "dell-desktop", // matches dropdown "Office"
     name: "Dell OptiPlex 7040 Desktop & 19\" Monitor",
     price: "Ksh.24,999",
     desc: "Intel i5-6500, 8GB RAM, 500GB HDD",
     img: "img/dellopti.webp"
   },
+    {
+    id: 6.1,
+    category: "Desktop",
+    type: "dell-desktop", // matches dropdown "Office"
+    name: "Dell OptiPlex 7040 Desktop & 19\" Monitor",
+    price: "Ksh.24,999",
+    desc: "Intel i5-6500, 8GB RAM, 500GB HDD",
+    img: "img/dellopti.webp"
+  },
+    {
+    id: 6.2,
+    category: "Desktop",
+    type: "allinone-desktop", // matches dropdown "Office"
+    name: "All in one Dell OptiPlex 7040 Desktop & 19\" Monitor",
+    price: "Ksh.24,999",
+    desc: "Intel i5-6500, 8GB RAM, 500GB HDD",
+    img: "img/dellopti.webp"
+  },
   {
-    id: 6,
+    id: 6.3,
     category: "Printer",
     type: "inkjet-printer", // matches dropdown "Inkjet"
     name: "HP Inkjet All-in-One",
-    price: "Ksh.15,999",
+    price: "Ksh.24,500",
     desc: "Inkjet, Ethernet WIFI support",
     img: "img/hp printer.webp"
   },

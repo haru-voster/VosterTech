@@ -281,92 +281,19 @@ const accessories = [
 
 
 // 
+// ==========================================
+// 🛒 CART + POPUP + CATEGORY FILTER SYSTEM
+// ==========================================
+
+// 🧺 Initialize Cart
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// 🧠 Create product card
-function createProductCard(p) {
-  const col = document.createElement("div");
-  col.className = "col-12 col-sm-6 col-md-4 col-lg-3";
-
-  const card = document.createElement("div");
-  card.className = "product-card p-0";
-
-  const img = document.createElement("img");
-  img.className = "product-img";
-  img.src = p.img;
-  img.alt = p.name;
-
-  const body = document.createElement("div");
-  body.className = "p-3 card-body";
-
-  const title = document.createElement("h6");
-  title.className = "mb-1";
-  title.textContent = p.name;
-
-  const desc = document.createElement("p");
-  desc.className = "mb-1 small text-muted";
-  desc.textContent = p.desc;
-
-  const price = document.createElement("div");
-  price.className = "product-price mb-2";
-  price.textContent = p.price;
-
-  const btnRow = document.createElement("div");
-  btnRow.className = "d-flex gap-2";
-
-  // ✅ WhatsApp Order button
-  const orderBtn = document.createElement("button");
-  orderBtn.className = "btn btn-whatsapp flex-grow-1 btn-sm";
-  orderBtn.innerHTML = "Order via WhatsApp";
-  orderBtn.onclick = () => sendWhatsAppOrder(p);
-
-  // ✅ Add to Cart button
-  const cartBtn = document.createElement("button");
-  cartBtn.className = "btn btn-outline-secondary btn-sm";
-  cartBtn.innerHTML = '<i class="fas fa-cart-plus"></i>';
-  cartBtn.title = "Add to Cart";
-  cartBtn.onclick = () => addToCart(p);
-
-  btnRow.appendChild(orderBtn);
-  btnRow.appendChild(cartBtn);
-
-  body.appendChild(title);
-  body.appendChild(desc);
-  body.appendChild(price);
-  body.appendChild(btnRow);
-
-  card.appendChild(img);
-  card.appendChild(body);
-  col.appendChild(card);
-  return col;
-}
-
-// Add cart
-function addToCart(product) {
-  if (cart.some((item) => item.id === product.id)) {
-    alert(`${product.name} is already in your cart.`);
-    return;
-  }
-  cart.push(product);
-  saveCart();
-  alert(`${product.name} added to cart.`);
-  updateCartCount();
-}
-
-// Remove from Cart
-function removeFromCart(id) {
-  cart = cart.filter((item) => item.id !== id);
-  saveCart();
-  updateCartCount();
-  renderCartItems();
-}
-
-//save cart to localStorage
+// ✅ Save cart to localStorage
 function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-// Floating cart icon
+// ✅ Update floating cart icon
 function updateCartCount() {
   let cartIcon = document.getElementById("cart-icon");
   if (!cartIcon) {
@@ -388,7 +315,37 @@ function updateCartCount() {
   cartIcon.innerHTML = `🛒 ${cart.length}`;
 }
 
-// Show Cart Modal
+// ✅ Add to Cart
+function addToCart(product) {
+  if (!product || !product.name || !product.price) {
+    alert("Error: Missing product details.");
+    console.error("Invalid product:", product);
+    return;
+  }
+
+  product.id = product.id || Date.now();
+  const exists = cart.find((item) => item.name === product.name);
+
+  if (exists) {
+    alert(`${product.name} is already in your cart.`);
+    return;
+  }
+
+  cart.push(product);
+  saveCart();
+  updateCartCount();
+  alert(`${product.name} added to cart.`);
+}
+
+// ✅ Remove from Cart
+function removeFromCart(id) {
+  cart = cart.filter((item) => item.id !== id);
+  saveCart();
+  updateCartCount();
+  renderCartItems();
+}
+
+// ✅ Cart Modal
 function showCartModal() {
   let modal = document.getElementById("cart-modal");
   if (!modal) {
@@ -405,7 +362,7 @@ function showCartModal() {
     modal.style.boxShadow = "0 4px 10px rgba(0,0,0,0.2)";
     modal.style.zIndex = "9999";
 
-  modal.innerHTML = `
+    modal.innerHTML = `
       <h5>Your Cart</h5>
       <ul id="cart-items" style="list-style:none; padding:0; max-height:200px; overflow-y:auto;"></ul>
       <p id="cart-total" style="font-weight:bold;">Total: Ksh.0</p>
@@ -416,11 +373,7 @@ function showCartModal() {
     `;
     document.body.appendChild(modal);
 
-    document.getElementById("close-cart").onclick = () => {
-      modal.style.display = "none";
-    };
-
-    // 
+    document.getElementById("close-cart").onclick = () => (modal.style.display = "none");
     document.getElementById("order-cart").onclick = sendCartOrder;
   }
 
@@ -428,11 +381,10 @@ function showCartModal() {
   modal.style.display = "block";
 }
 
-// 
+// ✅ Render Cart Items
 function renderCartItems() {
   const cartItems = document.getElementById("cart-items");
   const cartTotal = document.getElementById("cart-total");
-
   cartItems.innerHTML = "";
   let total = 0;
 
@@ -448,30 +400,20 @@ function renderCartItems() {
       <button class="btn btn-sm btn-outline-danger" onclick="removeFromCart(${item.id})">x</button>
     `;
     cartItems.appendChild(li);
-
-    const num = parseInt(item.price.replace(/\D/g, ""));
-    total += num || 0;
+    total += parseInt(item.price.replace(/\D/g, "")) || 0;
   });
 
   cartTotal.textContent = `Total: Ksh.${total.toLocaleString()}`;
 }
 
-// 
-function sendWhatsAppOrder(product) {
-  const phone = "254708466793"; 
-  const message = `Hello, I'm interested in this item:\n\n🖥 *${product.name}*\n💰 ${product.price}\n📃 ${product.desc}`;
-  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-  window.open(url, "_blank");
-}
-
-// Send all items in cart to WhatsApp
+// ✅ Send Cart Order to WhatsApp
 function sendCartOrder() {
   if (cart.length === 0) {
     alert("Your cart is empty!");
     return;
   }
 
-  const phone = "254708466793"; //
+  const phone = "254708466793";
   let message = "🛒 *Order Summary:*\n\n";
   cart.forEach((item, i) => {
     message += `${i + 1}. *${item.name}*\n💰 ${item.price}\n📃 ${item.desc}\n\n`;
@@ -479,108 +421,67 @@ function sendCartOrder() {
 
   const total = cart.reduce((sum, item) => sum + parseInt(item.price.replace(/\D/g, "")), 0);
   message += `*Total: Ksh.${total.toLocaleString()}*\n\nThank you for shopping with VosterTech!`;
-
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 }
 
-// 🟢 Initialize cart count on load
-window.addEventListener("DOMContentLoaded", updateCartCount);
-
-// existing WhatsApp order function
+// ✅ Send WhatsApp order for one product
 function sendWhatsAppOrder(product) {
-  const productName = product.name;
-  const price = product.price;
-  const desc = product.desc;
-  const imageUrl = window.location.origin + "/" + product.img.replace(/^\.\//, "");
-  const message =
-    `Hello, I want to order *${productName}*\n\n` +
-    `Description: ${desc}\n` +
-    `Price: ${price}\n` +
-    `Image: ${imageUrl}\n\n` +
-    `Please confirm availability and delivery options.`;
-
-  const url = `https://wa.me/${SELLER_PHONE}?text=${encodeURIComponent(message)}`;
-  window.open(url, "_blank");
+  const phone = "254708466793";
+  const message = `Hello, I'm interested in this item:\n\n🖥 *${product.name}*\n💰 ${product.price}\n📃 ${product.desc}`;
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
 }
 
-// render functions remain unchanged
+// ============================
+// 🖼️ PRODUCT + POPUP + FILTER
+// ============================
+
+// Render products (with optional filter)
 function renderProducts(filterType = null) {
   const grid = document.getElementById("productGrid");
   grid.innerHTML = "";
 
-  products
-    .filter(p => !filterType || p.type === filterType)
-    .forEach(p => grid.appendChild(createProductCard(p)));
+  const filtered = products.filter((p) => !filterType || p.type === filterType);
 
-  if (grid.innerHTML === "") {
-    grid.innerHTML = `<div class="alert alert-warning">No products found.</div>`;
-  }
-}
-
-function renderAccessories() {
-  const inner = document.getElementById("accessoryInner");
-  inner.innerHTML = "";
-  accessories.forEach((src, i) => {
-    const item = document.createElement("div");
-    item.className = "carousel-item" + (i === 0 ? " active" : "");
-    const img = document.createElement("img");
-    img.src = src;
-    img.alt = "accessory-" + (i+1);
-    item.appendChild(img);
-    inner.appendChild(item);
-  });
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  renderProducts();
-  renderAccessories();
-
-  document.querySelectorAll(".filter-link").forEach(link => {
-    link.addEventListener("click", function(e) {
-      e.preventDefault();
-      const type = this.dataset.filter;
-      renderProducts(type);
-    });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const productGrid = document.getElementById("productGrid");
-
-  // Render products
-  productGrid.innerHTML = products.map(product => `
-    <div class="col-md-3 col-sm-6">
+  filtered.forEach((p) => {
+    const div = document.createElement("div");
+    div.className = "col-md-3 col-sm-6";
+    div.innerHTML = `
       <div class="card h-100 text-center shadow-sm">
-        <img src="${product.img}" 
-             class="card-img-top product-img"
-             alt="${product.name}"
-             data-name="${product.name}"
-             data-price="${product.price}"
-             data-desc="${product.desc}"
-             data-img="${product.img}">
+        <img src="${p.img}" class="card-img-top product-img" 
+             alt="${p.name}"
+             data-name="${p.name}"
+             data-price="${p.price}"
+             data-desc="${p.desc}"
+             data-img="${p.img}">
         <div class="card-body">
-          <h6>${product.name}</h6>
-          <p class="text-success fw-bold">${product.price}</p>
+          <h6>${p.name}</h6>
+          <p class="text-success fw-bold">${p.price}</p>
         </div>
       </div>
-    </div>
-  `).join("");
+    `;
+    grid.appendChild(div);
+  });
 
-  // Add popup listeners
-  document.querySelectorAll(".product-img").forEach(img => {
+  if (filtered.length === 0) {
+    grid.innerHTML = `<div class="alert alert-warning">No products found in this category.</div>`;
+  }
+
+  // Attach popup event for each image
+  document.querySelectorAll(".product-img").forEach((img) => {
     img.addEventListener("click", () => {
       const product = {
-        img: img.getAttribute("data-img"),
-        name: img.getAttribute("data-name"),
-        price: img.getAttribute("data-price"),
-        desc: img.getAttribute("data-desc")
+        img: img.dataset.img,
+        name: img.dataset.name,
+        price: img.dataset.price,
+        desc: img.dataset.desc,
       };
       showPopup(product);
     });
   });
-});
+}
 
+// ✅ Show popup
 function showPopup(product) {
   const popup = document.getElementById("image-popup");
   const popupImg = document.getElementById("popup-img");
@@ -589,27 +490,21 @@ function showPopup(product) {
   const popupDesc = document.getElementById("popup-desc");
   const popupButtons = document.getElementById("popup-buttons");
 
-  // Fill popup
   popupImg.src = product.img;
   popupName.textContent = product.name;
   popupPrice.textContent = product.price;
   popupDesc.textContent = product.desc;
 
-  // WhatsApp + Cart buttons (no undefined)
   popupButtons.innerHTML = `
     <button class="cart-btn" id="addCartBtn">🛒 Add to Cart</button>
-    <a href="https://wa.me/254708466793?text=Hello!%20I'm%20interested%20in%20${encodeURIComponent(product.name)}%20priced%20at%20${encodeURIComponent(product.price)}"
+    <a href="https://wa.me/254708466793?text=Hello!%20I'm%20interested%20in%20${encodeURIComponent(
+      product.name
+    )}%20priced%20at%20${encodeURIComponent(product.price)}"
        target="_blank"
-       class="whatsapp-btn">
-      💬 Chat on WhatsApp
-    </a>
+       class="whatsapp-btn">💬 Chat on WhatsApp</a>
   `;
 
-  // ✅ Attach event listener dynamically
-  document.getElementById("addCartBtn").addEventListener("click", () => {
-    addToCart(product);
-  });
-
+  document.getElementById("addCartBtn").addEventListener("click", () => addToCart(product));
   popup.style.display = "flex";
 }
 
@@ -617,22 +512,16 @@ function hidePopup() {
   document.getElementById("image-popup").style.display = "none";
 }
 
-// add to cart
-function addToCart(product) {
-  if (!product || !product.name || !product.price) {
-    alert("Error: Missing product details.");
-    console.error("Invalid product data:", product);
-    return;
-  }
+// ✅ Category filter event listeners
+document.addEventListener("DOMContentLoaded", function () {
+  renderProducts(); // Default render all
+  updateCartCount();
 
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  const exists = cart.find(item => item.name === product.name);
-
-  if (exists) {
-    alert(`${product.name} is already in your cart.`);
-  } else {
-    cart.push(product);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    alert(`${product.name} added to your cart.`);
-  }
-}
+  document.querySelectorAll(".filter-link").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const type = this.dataset.filter;
+      renderProducts(type);
+    });
+  });
+});

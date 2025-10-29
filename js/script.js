@@ -340,7 +340,7 @@ const products = [
 // accessory images for carousel (unique)
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 🛑 List of sold out products with images
+  //product sold  out
   const soldOutItems = [
     { name: "Lenovo ThinkPad X250", img: "img/lenovo2.webp" },
     { name: "HP 8200 Desktop", img: "img/Hp-8200-desktop.jpg" },

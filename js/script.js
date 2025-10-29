@@ -355,7 +355,7 @@ const products = [
   },
 ];
 
-// accessory images for carousel (unique)
+// accessories)
 
 document.addEventListener("DOMContentLoaded", () => {
   //product sold  out

@@ -318,6 +318,8 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "Lenovo ThinkPad X250", img: "img/lenovo2.webp" },
     { name: "HP 8200 Desktop", img: "img/Hp-8200-desktop.jpg" },
     { name: "HP Probook 450", img: "img/hp.jpeg" },
+        { name: "Hard Disk Drive SATA", img: "img/storage1.jpeg" },
+            { name: "Mikrotik Router", img: "img/mikrotik.webp" },
     { name: "Computer Case with PSU", img: "img/case.webp" }
   ];
 

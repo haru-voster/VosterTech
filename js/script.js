@@ -269,6 +269,45 @@ const products = [
     desc: "HP 19.5V-2.31A 45W Blue Pin Adapter Original",
     img: "img/hpcharger.webp"
   }
+  // networking
+
+  ,
+    {
+    id: 16.0,
+    category: "Network",
+    type: "switch", 
+    name: "DP-LINK POE SWITCH",
+    price: "Ksh 48,500",
+    desc: "D-Link DGS-1210-28P 28-Port Gigabit PoE Switch with 24-Port 10/100/1000BaseT PoE + 4 Combo 1000BaseT/SFP Ports ",
+    img: "img/dlink.png"
+  },
+   {
+    id: 16.1,
+    category: "Network",
+    type: "kit", 
+    name: "Starlink Full kit",
+    price: "Ksh 48,000",
+    desc: "Standard Starlink kit version 4 gen3 ",
+    img: "img/starlink.jpg"
+  },
+    {
+    id: 16.2,
+    category: "Network",
+    type: "modem", 
+    name: " M-Wifi ",
+    price: "Ksh 2,500",
+    desc: "Portable SIM cars M-Wifi 4GB ",
+    img: "img/modem.webp"
+  },
+   {
+    id: 16.3,
+    category: "Network",
+    type: "kit", 
+    name: " Standard Starlink ",
+    price: "Ksh 55,000",
+    desc: "Starlink Gen 3 Standard Satellite ",
+    img: "img/starlink1.webp"
+  },
 ];
 
 // accessory images for carousel (unique)

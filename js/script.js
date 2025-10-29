@@ -344,6 +344,15 @@ const products = [
     desc: "Konica Minolta Bizhub C220 /C280 /C360 Toner TN-216/319 ",
     img: "img/ky2.jpg"
   },
+   {
+    id: 17.0,
+    category: "Toners",
+    type: "lasertoner", 
+    name: " LaserJet Toner ",
+    price: "Kshs 12,000",
+    desc: "HP 59A Black (CF259A) Original LaserJet Toner Cartridge ",
+    img: "img/lasertoner.webp"
+  },
 ];
 
 // accessory images for carousel (unique)

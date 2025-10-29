@@ -364,7 +364,7 @@ const products = [
   },
    {
     id: 18.0,
-    category:"Accessory",
+    category:"Accessories",
     type: "storage", 
     name: "Hard Disk Drive ",
     price: "Kshs 2,000",

@@ -293,10 +293,10 @@ const products = [
     {
     id: 16.2,
     category: "Network",
-    type: "modem", 
-    name: " M-Wifi ",
+    type: "modems", 
+    name: " 4G M-Wifi ",
     price: "Ksh 2,500",
-    desc: "Portable SIM cars M-Wifi 4GB ",
+    desc: "Portable SIM cars M-Wifi 4G ",
     img: "img/modem.webp"
   },
    {

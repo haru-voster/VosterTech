@@ -335,6 +335,15 @@ const products = [
     desc: "Epson pure Cyan, Yellow, Majenta, Blue, Black econtank bottles ",
     img: "img/epsonink.webp"
   },
+   {
+    id: 17.0,
+    category: "Toners",
+    type: "kyocera", 
+    name: " Kyocera Minolta Toner ",
+    price: "Kshs 4,000",
+    desc: "Konica Minolta Bizhub C220 /C280 /C360 Toner TN-216/319 ",
+    img: "img/ky2.jpg"
+  },
 ];
 
 // accessory images for carousel (unique)

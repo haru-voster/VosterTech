@@ -160,7 +160,7 @@ const products = [
    {
     id: 6.3,
     category: "Desktop",
-    type: "allinone-desktop", // matches "allin on"
+    type: "allinone-desktop", // matches "allin one"
     name: "All in one hp 205",
     price: "Ksh.50,000",
     desc: "HP 205 G4 22 All in One 21.5 FHD AMD Ryzen 3050U 4GB RAM 1TB HDD Windows 10 Pro PC 1 Year Warranty",

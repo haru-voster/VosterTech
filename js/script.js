@@ -112,6 +112,15 @@ const products = [
     desc: "Dell Chromebook 11 3190 x360 Intel Celeron 4GB RAM 32GB SSD 11.6″ Touch Screen",
     img: "img/dellchrome.avif"
   },
+   {
+    id: 5.2,
+    category: "Laptop",
+    type: "dell-laptop", // matches "chromebook"
+    name: "Dell 7480 Laptop",
+    price: "Ksh.22,500",
+    desc: "Dell Latitude 13.3 inch win11 pro, corei5 intel processor||speed 2.4ghz, 6 months warant″ Touch Screen",
+    img: "img/refurbdell.jpg"
+  },
   {
     id: 6.0,
     category: "Desktop",

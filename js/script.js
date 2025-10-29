@@ -317,6 +317,15 @@ const products = [
     desc: "Starlink Gen 3 Standard Satellite ",
     img: "img/starlink1.webp"
   },
+    {
+    id: 17.0,
+    category: "Toners",
+    type: "espon-ink", 
+    name: " Epson ECOTANK ",
+    price: "Kshs 1,500",
+    desc: "Epson pure Cyan, Yellow, Majenta, Blue, Black econtank ",
+    img: "img/epsonink.webp"
+  },
 ];
 
 // accessory images for carousel (unique)
@@ -328,8 +337,8 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "HP 8200 Desktop", img: "img/Hp-8200-desktop.jpg" },
     { name: "HP Probook 450", img: "img/hp.jpeg" },
         { name: "Hard Disk Drive SATA", img: "img/storage1.jpeg" },
-            { name: "Mikrotik Router", img: "img/mikrotik.webp" },
-    { name: "Computer Case with PSU", img: "img/case.webp" }
+        { name: "Mikrotik Router", img: "img/mikrotik.webp" },
+        { name: "Computer Case with PSU", img: "img/case.webp" }
   ];
 
   const soldOutPopup = document.getElementById("sold-out-popup");

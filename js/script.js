@@ -362,6 +362,15 @@ const products = [
     desc: "HP 59A Black (CF259A) Original LaserJet Toner Cartridge ",
     img: "img/lasertoner.webp"
   },
+   {
+    id: 18.0,
+    category:"Accessory",
+    type: "storage", 
+    name: "Hard Disk Drive ",
+    price: "Kshs 2,000",
+    desc: "500GB SATA Drive",
+    img: "img/storage1.jpeg"
+  },
 ];
 
 // accessories)

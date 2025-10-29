@@ -83,7 +83,7 @@ const products = [
     name: "Macbook pro A1708 ",
     price: "Ksh.29,000",
     desc: "Apple Macbook Pro A1708 Intel Core i5-6360U 8GB RAM 256GB SSD ROM 13.3 LED IPS Display Intel Iris Graphics ",
-    img: "img/macbook2017.webp"
+    img: "img/Macbook2017.webp"
   },
      {
     id: 4.1,

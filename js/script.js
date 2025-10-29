@@ -130,6 +130,15 @@ const products = [
     desc: "HP Desktop CPU Intel Core i5 3.40GHz 4GB Ram 500GB HDD 19″ TFT Keyboard & Mouse Complete set",
     img: "img/hp-desk.webp"
   },
+   {
+    id: 6.0,
+    category: "Desktop",
+    type: "hp-desktop", // matches dropdown "Office"
+    name: "HP Desktop & 17inch Monitor",
+    price: "Ksh.9,800",
+    desc: "Hp desktop Intel core i3 2.8GHz 4GB 500GB HDD +  Monitor fullset",
+    img: "img/Hp-set.jpg"
+  },
     {
     id: 6.1,
     category: "Desktop",
@@ -323,7 +332,7 @@ const products = [
     type: "espon-ink", 
     name: " Epson ECOTANK ",
     price: "Kshs 1,500",
-    desc: "Epson pure Cyan, Yellow, Majenta, Blue, Black econtank ",
+    desc: "Epson pure Cyan, Yellow, Majenta, Blue, Black econtank bottles ",
     img: "img/epsonink.webp"
   },
 ];

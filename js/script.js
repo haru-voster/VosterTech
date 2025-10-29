@@ -116,10 +116,10 @@ const products = [
     id: 6.0,
     category: "Desktop",
     type: "hp-desktop", // matches dropdown "Office"
-    name: "HP Desktop & 19\" Monitor",
+    name: "HP Desktop & 19inch Monitor",
     price: "Ksh.14,500",
     desc: "HP Desktop CPU Intel Core i5 3.40GHz 4GB Ram 500GB HDD 19″ TFT Keyboard & Mouse Complete set",
-    img: "img/Hp-desk.png"
+    img: "img/hp-desk.webp"
   },
     {
     id: 6.1,

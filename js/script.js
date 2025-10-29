@@ -408,7 +408,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // 🧺 Initialize Cart
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// ✅ Save cart to localStorage
+// Save cart to localStorage
 function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
@@ -435,7 +435,7 @@ function updateCartCount() {
   cartIcon.innerHTML = `🛒 ${cart.length}`;
 }
 
-// ✅ Add to Cart
+// Add to Cart
 function addToCart(product) {
   if (!product || !product.name || !product.price) {
     alert("Error: Missing product details.");

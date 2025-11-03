@@ -363,6 +363,15 @@ const products = [
     img: "img/epsonink.webp"
   },
    {
+    id: 17.1,
+    category: "Toners",
+    type: "espon-ink", 
+    name: " Epson l3250 Printer",
+    price: "Kshs 21,500",
+    desc: "Epson EcoTank L3250 A4 Wi-Fi All-in-One Ink Tank Printer",
+    img: "img/epson-l3250.jpg"
+  },
+   {
     id: 17.0,
     category: "Toners",
     type: "kyocera", 
@@ -411,6 +420,7 @@ const products = [
 ];
 
 // accessories)
+
 
 document.addEventListener("DOMContentLoaded", () => {
   //product sold  out

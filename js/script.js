@@ -27,8 +27,17 @@ const products = [
     type: "hp-laptop", // hp 
     name: "HP EliteBook",
     price: "Ksh.45,000",
-    desc: "Intel Core i7 10th Gen, 14\" FHD 840 G7 - 16GB / 512GB",
+    desc: "Intel Core i7 10th Gen, 14 FHD 840 G7 - 16GB / 512GB",
     img: "img/new.webp"
+  },
+    {
+    id: 1.4,
+    category: "Laptop",
+    type: "hp-laptop", // hp 
+    name: "HP EliteBook",
+    price: "Ksh 25,000",
+    desc: "Intel Core i5 10th Gen, 14 FHD 840 G7 - 8GB / 256GB",
+    img: "img/hp.jpg"
   },
   {
     id: 2.1,

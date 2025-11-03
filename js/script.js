@@ -371,6 +371,15 @@ const products = [
     desc: "500GB SATA Drive",
     img: "img/storage1.jpeg"
   },
+   {
+    id: 18.1,
+    category:"Accessories",
+    type: "motherboard", 
+    name: "ASUS PC Motherboard  ",
+    price: "Kshs 2,000",
+    desc: "ASUS PRIME B760M-A AX LGA 1700 DDR5 Micro-ATX Gaming Motherboard",
+    img: "img/asusboard.jpg"
+  },
 ];
 
 // accessories)

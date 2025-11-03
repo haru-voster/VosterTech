@@ -161,7 +161,7 @@ const products = [
     id: 6.1,
     category: "Desktop",
     type: "dell-desktop", // matches dropdown "Office"
-    name: "Dell OptiPlex 7040 Desktop & 19\" Monitor",
+    name: "Dell OptiPlex 7040 Desktop & 19 Monitor",
     price: "Ksh.24,999",
     desc: "Intel i5-6500, 8GB RAM, 500GB HDD",
     img: "img/dellopti.webp"
@@ -170,7 +170,7 @@ const products = [
     id: 6.2,
     category: "Desktop",
     type: "allinone-desktop", // matches "allin on"
-    name: "All in one Dell OptiPlex 7040 Desktop & 19\" Monitor",
+    name: "All in one Dell OptiPlex 7040 Desktop & 19 Monitor",
     price: "Ksh.24,999",
     desc: "Intel i5-6500, 8GB RAM, 500GB HDD",
     img: "img/HP-All-in-one-600.webp"
@@ -398,6 +398,15 @@ const products = [
     price: "Kshs 2,000",
     desc: "ASUS PRIME B760M-A AX LGA 1700 DDR5 Micro-ATX Gaming Motherboard",
     img: "img/asusboard.jpg"
+  },
+  {
+    id: 18.2,
+    category:"Accessories",
+    type: "monitor", 
+    name: "hp elitebook screen   ",
+    price: "Kshs 4,500",
+    desc: "Hp elitebook 14 inch original Screen ",
+    img: "img/screen.webp"
   },
 ];
 

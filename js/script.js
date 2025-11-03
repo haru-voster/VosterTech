@@ -227,7 +227,7 @@ const products = [
     name: "Plotter",
     price: "Ksh.43,000",
     desc: "Branding Combo Vinyl Cutting Plotter Contour 2 Feet",
-    img: "img/plotter.png"
+    img: "img/plotters2.jpg"
   },
   {
     id: 11,
@@ -245,7 +245,7 @@ const products = [
     name: "Epison Printer",
     price: "Ksh.20,999",
     desc: "Epison Printer  (WIFI/Bluetooth/USB enabled)",
-    img: "img/eson-l3250.jpg"
+    img: "img/epson-l3250.jpg"
   },
   {
     id: 13,
@@ -362,16 +362,7 @@ const products = [
     desc: "Epson pure Cyan, Yellow, Majenta, Blue, Black econtank bottles ",
     img: "img/epsonink.webp"
   },
-   {
-    id: 17.1,
-    category: "Toners",
-    type: "espon-ink", 
-    name: " Epson l3250 Printer",
-    price: "Kshs 21,500",
-    desc: "Epson EcoTank L3250 A4 Wi-Fi All-in-One Ink Tank Printer",
-    img: "img/epson-l3250.jpg"
-  },
-   {
+     {
     id: 17.0,
     category: "Toners",
     type: "kyocera", 

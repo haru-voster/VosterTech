@@ -362,6 +362,7 @@ const products = [
     desc: "HP 59A Black (CF259A) Original LaserJet Toner Cartridge ",
     img: "img/lasertoner.webp"
   },
+  // accesories components
    {
     id: 18.0,
     category:"Accessories",

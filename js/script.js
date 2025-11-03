@@ -234,7 +234,7 @@ const products = [
     category: "Printer",
     type: "Canon Printer", // matches dropdown "Inkjet"
     name: "Canon All-in-One",
-    price: "Ksh.10,999",
+    price: "Ksh.21,999",
     desc: "Canon printer, WIFI support",
     img: "img/canon25.png"
   },
@@ -242,10 +242,10 @@ const products = [
     id: 12,
     category: "Printer",
     type: "Epison Printer", // matches dropdown "Inkjet"
-    name: "Epison Printer L3250",
-    price: "Ksh.10,999",
-    desc: "Epison Printer L3250 (WIFI/Bluetooth/USB enabled)",
-    img: "img/epison printer.jpeg"
+    name: "Epison Printer",
+    price: "Ksh.20,999",
+    desc: "Epison Printer  (WIFI/Bluetooth/USB enabled)",
+    img: "img/eson-l3250.jpg"
   },
   {
     id: 13,

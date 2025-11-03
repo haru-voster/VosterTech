@@ -80,10 +80,19 @@ const products = [
     id: 3.2,
     category: "Laptop",
     type: "dell-laptop", // matches dropdown "dell"
-    name: "Dell Precision 5570 coi5-12800h, 8gb/256gb SSD ",
+    name: "Dell Precision 5570 ",
     price: "Ksh.24,999",
     desc: "lenovo thinkpad 4gb/128ssd coi5 6th gen intel processor speed 2.0ghz",
     img: "img/dell.jpeg"
+  },
+  {
+    id: 3.3,
+    category: "Laptop",
+    type: "dell-laptop", // matches dropdown "dell"
+    name: "Dell Pentium chromebook",
+    price: "Ksh.12,999",
+    desc: "lenovo thinkpad 4gb/128ssd coi5 6th gen intel processor speed 2.0ghz",
+    img: "img/pentium.jpg"
   },
    {
     id: 4.0,

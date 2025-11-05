@@ -441,7 +441,7 @@ const products = [
     category:"Desktops",
     type: "gaming-desktop", 
     name: "Hp Gaming pc  ",
-    price: "Kshs 15,000",
+    price: "Kshs 60,000",
     desc: " HP Pavilion Gaming Pc Tg01 Brand New - Core I5 10400f 10th Generation 6 Cores, 16/512GB, 3.0GHZ",
     img: "img/gaming1.webp"
   },

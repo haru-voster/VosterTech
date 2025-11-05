@@ -473,8 +473,10 @@ document.addEventListener("DOMContentLoaded", () => {
   //product sold  out
   const soldOutItems = [
     { name: "Lenovo ThinkPad X250", img: "img/lenovo2.webp" },
+    { name: "hp mini-pc", img: "img/hpdsk.webp" },
     { name: "HP 8200 Desktop", img: "img/Hp-8200-desktop.jpg" },
-    { name: "HP Probook 450", img: "img/hp.jpeg" },
+    { name: "Modem", img: "img/modem.webp" },
+        { name: "Mac book", img: "img/mac1.jpg" },
         { name: "Hard Disk Drive SATA", img: "img/storage1.jpeg" },
         { name: "Mikrotik Router", img: "img/mikrotik.webp" },
         { name: "Computer Case with PSU", img: "img/case.webp" }

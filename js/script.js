@@ -166,6 +166,15 @@ const products = [
     desc: "Intel i5-6500, 8GB RAM, 500GB HDD",
     img: "img/dellopti.webp"
   },
+   {
+    id: 6.1,
+    category: "Desktop",
+    type: "dell-desktop", // matches dropdown "Office"
+    name: "Dell 7040 Desktop",
+    price: "Ksh.24,999",
+    desc: "DELL optlex 7040 tower core i7 - 8gb ram,500gb hdd , 3.4GHZ speed",
+    img: "img/dell-dsk.webp"
+  },
     {
     id: 6.2,
     category: "Desktop",
@@ -183,6 +192,52 @@ const products = [
     price: "Ksh.50,000",
     desc: "HP 205 G4 22 All in One 21.5 FHD AMD Ryzen 3050U 4GB RAM 1TB HDD Windows 10 Pro PC 1 Year Warranty",
     img: "img/hp-all.webp"
+  },
+   // gaming pcs /desktops
+   {
+    id: 6.3,
+    category:"Desktops",
+    type: "mini-pc", 
+    name: "Lenovo mini-pc  ",
+    price: "Kshs 18,500",
+    desc: " Lenovo COMPLETE THINKCENTRE M710q MINI PC 8GB RAM 128 GB SSD Intel Ci5",
+    img: "img/lenovo-mini.jpg"
+  },
+    {
+    id: 6.4,
+    category:"Desktops",
+    type: "mini-pc", 
+    name: "Lenovo mini-pc  ",
+    price: "Kshs 1,500",
+    desc: " ",
+    img: "img/"
+  },
+  {
+    id: 6.5,
+    category:"Desktops",
+    type: "lenovo-desktop", 
+    name: "Lenovo Desktop  ",
+    price: "Kshs 15,000",
+    desc: " Lenovo ThinkCentre desktop-core i5 8500 intel core i5 8th gen ,8gb ram,500gb",
+    img: "img/lenovodsk.webp"
+  },
+    {
+    id: 6.6,
+    category:"Desktops",
+    type: "gaming-desktop", 
+    name: "Lenovo Gaming PC",
+    price: "Kshs 46,000",
+    desc: " Lenovo thinkstation p330 - Intel Xeon Processor W-2123 ,16gb ram,256gb 5gb grahic Nvidia quadro p2000",
+    img: "img/gaming2.webp"
+  },
+    {
+    id: 6.7,
+    category:"Desktops",
+    type: "gaming-desktop", 
+    name: "Hp Gaming pc  ",
+    price: "Kshs 60,000",
+    desc: " HP Pavilion Gaming Pc Tg01 Brand New - Core I5 10400f 10th Generation 6 Cores, 16/512GB, 3.0GHZ",
+    img: "img/gaming1.webp"
   },
   {
     id: 6.3,
@@ -408,43 +463,7 @@ const products = [
     desc: "Hp elitebook 14 inch original Screen ",
     img: "img/screen.webp"
   },
-  // gaming pcs /desktops
-   {
-    id: 19.0,
-    category:"Desktops",
-    type: "mini-pc", 
-    name: "Lenovo mini-pc  ",
-    price: "Kshs 18,500",
-    desc: " Lenovo COMPLETE THINKCENTRE M710q MINI PC 8GB RAM 128 GB SSD Intel Ci5",
-    img: "img/lenovo-mini.jpg"
-  },
-  {
-    id: 19.1,
-    category:"Desktops",
-    type: "lenovo-desktop", 
-    name: "Lenovo Desktop  ",
-    price: "Kshs 15,000",
-    desc: " Lenovo ThinkCentre desktop-core i5 8500 intel core i5 8th gen ,8gb ram,500gb",
-    img: "img/lenovodsk.webp"
-  },
-    {
-    id: 19.2,
-    category:"Desktops",
-    type: "gaming-desktop", 
-    name: "Lenovo Gaming PC",
-    price: "Kshs 46,000",
-    desc: " Lenovo thinkstation p330 - Intel Xeon Processor W-2123 ,16gb ram,256gb 5gb grahic Nvidia quadro p2000",
-    img: "img/gaming2.webp"
-  },
-    {
-    id: 19.3,
-    category:"Desktops",
-    type: "gaming-desktop", 
-    name: "Hp Gaming pc  ",
-    price: "Kshs 60,000",
-    desc: " HP Pavilion Gaming Pc Tg01 Brand New - Core I5 10400f 10th Generation 6 Cores, 16/512GB, 3.0GHZ",
-    img: "img/gaming1.webp"
-  },
+ 
 ];
 
 // accessories)

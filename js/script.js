@@ -155,7 +155,7 @@ const products = [
     name: "HP Desktop & 17inch Monitor",
     price: "Ksh.9,800",
     desc: "Hp desktop Intel core i3 2.8GHz 4GB 500GB HDD +  Monitor fullset",
-    img: "img/Hp-set.jpg"
+    img: "img/HP-set.jpg"
   },
     {
     id: 6.1,

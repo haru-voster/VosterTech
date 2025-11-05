@@ -171,7 +171,7 @@ const products = [
     category: "Desktop",
     type: "dell-desktop", // matches dropdown "Office"
     name: "Dell 7040 Desktop",
-    price: "Ksh.24,999",
+    price: "Ksh.20,000",
     desc: "DELL optlex 7040 tower core i7 - 8gb ram,500gb hdd , 3.4GHZ speed",
     img: "img/dell-dsk.webp"
   },

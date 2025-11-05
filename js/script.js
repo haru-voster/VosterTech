@@ -657,7 +657,7 @@ function renderProducts(filterType = null) {
   });
 }
 
-// ✅ Show popup
+// Show popup
 function showPopup(product) {
   const popup = document.getElementById("image-popup");
   const popupImg = document.getElementById("popup-img");

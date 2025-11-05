@@ -1,4 +1,4 @@
-// seller phone (international format, no leading 0)
+//PHONENUMBER
 const SELLER_PHONE = "254708466793";
 
 // product data (same as yours)

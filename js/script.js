@@ -408,6 +408,25 @@ const products = [
     desc: "Hp elitebook 14 inch original Screen ",
     img: "img/screen.webp"
   },
+  // gaming pcs /desktops
+   {
+    id: 19.0,
+    category:"Desktops",
+    type: "mini-pc", 
+    name: "Lenovo mini-pc  ",
+    price: "Kshs 18,500",
+    desc: " Lenovo COMPLETE THINKCENTRE M710q MINI PC 8GB RAM 128 GB SSD Intel Ci5",
+    img: "img/lenovo-mini.jpg"
+  },
+  {
+    id: 19.1,
+    category:"Desktops",
+    type: "lenovo-desktop", 
+    name: "Lenovo Desktop  ",
+    price: "Kshs 18,500",
+    desc: " Lenovo ThinkCentre desktop-core i5 8500 intel core i5 8th gen ,8gb ram,500gb",
+    img: "img/lenovodsk.webp"
+  },
 ];
 
 // accessories)
@@ -458,7 +477,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// 🛒 CART + POPUP + CATEGORY FILTER SYSTEM
 // ==========================================
 
 // 🧺 Initialize Cart

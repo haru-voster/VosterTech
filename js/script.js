@@ -207,10 +207,10 @@ const products = [
     id: 6.4,
     category:"Desktops",
     type: "mini-pc", 
-    name: "Lenovo mini-pc  ",
-    price: "Kshs 1,500",
-    desc: " ",
-    img: "img/"
+    name: "HP mini-pc  ",
+    price: "Kshs 18,000",
+    desc: " HP EliteDesk 705 G4 Mini PC - Ryzen 5 2400G, 16GB RAM, 256GB SSD",
+    img: "img/hpdsk.webp"
   },
   {
     id: 6.5,

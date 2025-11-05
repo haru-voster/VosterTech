@@ -423,9 +423,27 @@ const products = [
     category:"Desktops",
     type: "lenovo-desktop", 
     name: "Lenovo Desktop  ",
-    price: "Kshs 18,500",
+    price: "Kshs 15,000",
     desc: " Lenovo ThinkCentre desktop-core i5 8500 intel core i5 8th gen ,8gb ram,500gb",
     img: "img/lenovodsk.webp"
+  },
+    {
+    id: 19.2,
+    category:"Desktops",
+    type: "gaming-desktop", 
+    name: "Lenovo Gaming PC",
+    price: "Kshs 46,000",
+    desc: " Lenovo thinkstation p330 - Intel Xeon Processor W-2123 ,16gb ram,256gb 5gb grahic Nvidia quadro p2000",
+    img: "img/gaming2.webp"
+  },
+    {
+    id: 19.3,
+    category:"Desktops",
+    type: "gaming-desktop", 
+    name: "Hp Gaming pc  ",
+    price: "Kshs 15,000",
+    desc: " HP Pavilion Gaming Pc Tg01 Brand New - Core I5 10400f 10th Generation 6 Cores, 16/512GB, 3.0GHZ",
+    img: "img/gaming1.webp"
   },
 ];
 

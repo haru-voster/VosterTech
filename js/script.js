@@ -417,6 +417,15 @@ const products = [
     desc: "Starlink Gen 3 Standard Satellite ",
     img: "img/starlink1.webp"
   },
+   {
+    id: 16.4,
+    category: "Network",
+    type: "router", 
+    name: " Mikrotik Router ",
+    price: "Ksh 7,000",
+    desc: "Mikrotik hEX Router RB750GR3 ",
+    img: "img/mikrouter.webp"
+  },
     {
     id: 17.0,
     category: "Toners",

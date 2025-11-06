@@ -332,7 +332,7 @@ const products = [
   }
   ,
    {
-    id: 15,
+    id: 15.0,
     category: "Accessory",
     type: "keyboard", // Keyboard"
     name: " Wireless Keyboard",

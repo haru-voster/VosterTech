@@ -316,7 +316,7 @@ const products = [
     category: "Accessory",
     type: "display", // matches dropdown "Display"
     name: "HDMI to VGA Adapter",
-    price: "Ksh.1,500",
+    price: "Ksh 1,500",
     desc: "1080px for PC/laptop/Desktops",
     img: "img/HDMI-VGA.jpg"
   }
@@ -326,11 +326,20 @@ const products = [
     category: "Accessory",
     type: "keyboard", // matches dropdown "Display"
     name: " USB Keyboard",
-    price: "Ksh,1,500",
+    price: "Ksh 1,500",
     desc: "Logitech K120 Wired Keyboard for Windows, Plug and Play",
     img: "img/wired.jpg"
   }
   ,
+   {
+    id: 15,
+    category: "Accessory",
+    type: "keyboard", // Keyboard"
+    name: " Wireless Keyboard",
+    price: "Ksh 4,000",
+    desc: "Hp-655-wireless-keyboard-and-mouse-combo",
+    img: "img/keymouse.png"
+  },
   {
     id: 15.1,
     category: "Accessory",

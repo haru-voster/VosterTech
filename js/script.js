@@ -425,6 +425,15 @@ const products = [
     price: "Ksh 7,000",
     desc: "Mikrotik hEX Router RB750GR3 ",
     img: "img/mikrouter.webp"
+  },//
+  {
+    id: 16.4,
+    category: "Network",
+    type: "router", 
+    name: "  ",
+    price: "Ksh ",
+    desc: " ",
+    img: ""
   },
     {
     id: 17.0,

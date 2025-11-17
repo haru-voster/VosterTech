@@ -500,7 +500,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //product sold  out
   const soldOutItems = [
     { name: "Lenovo ThinkPad X250", img: "img/lenovo2.webp" },
-    { name: "hp mini-pc", img: "img/battery.webp" },
+    { name: "hp battery", img: "img/battery.webp" },
     { name: "HP 8200 Desktop", img: "img/Hp-8200-desktop.jpg" },
     { name: "Modem", img: "img/modem.webp" },
         { name: "Mac book", img: "img/mac1.jpg" },

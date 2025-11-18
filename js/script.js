@@ -275,6 +275,15 @@ const products = [
     desc: "Durable SSD Transcend",
     img: "img/storage2.jpeg"
   },
+    {
+    id: 9.1,
+    category: "Accessory",
+    type: "storage", // matches dropdown "Storage"
+    name: "External SSD Casing",
+    price: "Ksh.3,000",
+    desc: "Durable external NvMe SSD casing for storage | portable",
+    img: "img/nvme.jpeg"
+  },
   {
     id: 10,
     category: "Accessory",

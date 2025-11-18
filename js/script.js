@@ -287,7 +287,7 @@ const products = [
   {
     id: 10,
     category: "Accessory",
-    type: "storage", // matches dropdown "Storge"
+    type: "storage", // matches dropdon "Storge"
     name: "Plotter",
     price: "Ksh.43,000",
     desc: "Branding Combo Vinyl || Cutting Plotter Contour 2 Feet",

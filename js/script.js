@@ -266,6 +266,26 @@ const products = [
     desc: "Canon printer, WIFI support",
     img: "img/canon.png"
   },
+  // projectors
+    {
+    id: 8,
+    category: "Projector",
+    type: "T5", // matches dropdown "Inkjet"
+    name: "T5 wifi projector",
+    price: "Ksh.25,999",
+    desc: "T5 wifi projector with HD camera",
+    img: "img/t5.webp"
+  },
+     {
+    id: 8.2,
+    category: "Projector",
+    type: "Epson-projector", // matches dropdown "epson"
+    name: "Epson EB-E01 XGA 3300 Lumens Projector",
+    price: "Ksh.45,000",
+    desc: "Epson EB-E01 XGA 3300 Lumens Projector, Portable and quick to set up",
+    img: "img/epson.webp"
+  },
+
   {
     id: 9,
     category: "Accessory",

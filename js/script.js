@@ -281,7 +281,7 @@ const products = [
     type: "storage", // matches dropdown "Storage"
     name: "External SSD Casing",
     price: "Ksh.3,000",
-    desc: "Durable external NvMe SSD casing for storage | portable",
+    desc: "Durable external NvMe SSD casing for storag| portable",
     img: "img/nvme.jpeg"
   },
   {
@@ -439,10 +439,10 @@ const products = [
     id: 16.4,
     category: "Network",
     type: "router", 
-    name: "  ",
-    price: "Ksh ",
-    desc: " ",
-    img: ""
+    name: " Hikvision Cat6 Cables ",
+    price: "Ksh 17,500",
+    desc: " Hikvision DS-1LN6UZC0(O-STD) orange 305m CAT6 U/UTP Network Cable",
+    img: "img/cat6.webp"
   },
     {
     id: 17.0,

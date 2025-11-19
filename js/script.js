@@ -283,7 +283,7 @@ const products = [
     name: "Epson EB-E01 XGA 3300 Lumens Projector",
     price: "Ksh.45,000",
     desc: "Epson EB-E01 XGA 3300 Lumens Projector, Portable and quick to set up",
-    img: "img/epson.webp"
+    img: "img/espon.webp"
   },
 
   {

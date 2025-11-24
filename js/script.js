@@ -356,7 +356,7 @@ const products = [
     type: "display", // matches dropdown "Disply"
     name: "HDMI 1.5M LONG",
     price: "Ksh 500",
-    desc: "4K HDMI Cable 1.5 Metres, JSAUX 18Gbps High Speed HDMI 2.0 Braided HDMI Cord, 4K 60Hz",
+    desc: "4K HDMI Cable 1.5 Metres, High Speed HDMI 2.0 Braided HDMI Cord, 4K 60Hz",
     img: "img/HDMI.png"
   }
   ,

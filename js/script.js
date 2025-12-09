@@ -529,6 +529,15 @@ const products = [
     desc: "Hp elitebook 14 inch original Screen ",
     img: "img/screen.webp"
   },
+   {
+    id: 18.3,
+    category:"Accessories",
+    type: "", 
+    name: "   ",
+    price: "Kshs ",
+    desc: " ",
+    img: ""
+  },
  
 ];
 

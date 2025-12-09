@@ -538,6 +538,15 @@ const products = [
     desc: " Lexars WD M.2 NVMe SSD 512GB, High-speed Performance",
     img: "img/m.2.png"
   },
+     {
+    id: 18.4,
+    category:"Accessories",
+    type: "storage", 
+    name: " Lexar SATA 2.5 SSD 512GB ",
+    price: "Kshs 7,000 ",
+    desc: " Lexars SATA 2.5 SSD 512GB, High-speed Performance",
+    img: "img/lexar.png"
+  },
  
 ];
 

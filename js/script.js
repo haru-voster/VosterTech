@@ -311,7 +311,7 @@ const products = [
     name: "External SSD 2TB",
     price: "Ksh.23,000",
     desc: "Dahua T7 Portable SSD 2TB USB 3.2 Gen2",
-    img: "img/externalssd.jpeg"
+    img: "img/external.jpeg"
   },
   {
     id: 11,
@@ -532,11 +532,11 @@ const products = [
    {
     id: 18.3,
     category:"Accessories",
-    type: "", 
-    name: "   ",
-    price: "Kshs ",
-    desc: " ",
-    img: ""
+    type: "storage", 
+    name: " Lexar WD SSD 512GB ",
+    price: "Kshs 8,500 ",
+    desc: " Lexars WD M.2 NVMe SSD 512GB, High-speed Performance",
+    img: "img/m.2.png"
   },
  
 ];

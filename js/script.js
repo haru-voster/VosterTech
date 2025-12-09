@@ -547,6 +547,16 @@ const products = [
     desc: " Lexars SATA 2.5 SSD 512GB, High-speed Performance",
     img: "img/lexar.png"
   },
+    {
+    id: 18.4,
+    category:"Accessories",
+    type: "storage", 
+    name: " PC4 4GB RAM ",
+    price: "Kshs 3,300 ",
+    desc: "PC4 4GB RAM DDR4 2400MHz, High-speed Performance",
+    img: "img/pc4.png"
+  },
+ 
  
 ];
 

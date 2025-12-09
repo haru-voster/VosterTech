@@ -308,10 +308,10 @@ const products = [
     id: 10,
     category: "Accessory",
     type: "storage", // matches dropdon "Storage.."
-    name: "Plotter",
-    price: "Ksh.43,000",
-    desc: "Branding Combo Vinyl || Cutting Plotter Contour 2 Feet",
-    img: "img/plotters.jpg"
+    name: "External SSD 2TB",
+    price: "Ksh.23,000",
+    desc: "Dahua T7 Portable SSD 2TB USB 3.2 Gen2",
+    img: "img/externalssd.jpeg"
   },
   {
     id: 11,

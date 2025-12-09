@@ -543,7 +543,7 @@ const products = [
     category:"Accessories",
     type: "storage", 
     name: " Lexar SATA 2.5 SSD 512GB ",
-    price: "Kshs 7,000 ",
+    price: "Kshs 8,000 ",
     desc: " Lexars SATA 2.5 SSD 512GB, High-speed Performance",
     img: "img/lexar.png"
   },

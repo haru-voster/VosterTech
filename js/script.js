@@ -590,7 +590,7 @@ document.addEventListener("DOMContentLoaded", () => {
      { name: "Nvme casing with 256GB SSD", img: "img/nvme1.jpeg" },
     { name: "hp battery", img: "img/battery.webp" },
     { name: "HP 8200 Desktop", img: "img/Hp-8200-desktop.jpg" },
-    { name: "Modem", img: "img/modem.webp" },
+    { name: "hp elitebook 1030G2 x360 ", img: "img/hp1030g2.jpg" },
         { name: "Mac book", img: "img/mac1.jpg" },
         { name: "Hard Disk Drive SATA", img: "img/storage1.jpeg" },
         { name: "Mikrotik Router", img: "img/mikrotik.webp" },

@@ -594,7 +594,8 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Mac book", img: "img/mac1.jpg" },
         { name: "Hard Disk Drive SATA", img: "img/storage1.jpeg" },
         { name: "Mikrotik Router", img: "img/mikrotik.webp" },
-        { name: "Computer Case with PSU", img: "img/case.webp" }
+        { name: "Computer Case with PSU", img: "img/case.webp" },
+         { name: "Dell latitude 7400 x270", img: "img/dell-l.jpg" }
   ];
 
   const soldOutPopup = document.getElementById("sold-out-popup");

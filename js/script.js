@@ -40,6 +40,15 @@ const products = [
     img: "img/hp.jpg"
   },
   {
+    id: 1.5,
+    category: "Laptop",
+    type: "hp-laptop", // matches dropdown "hp"
+    name: "HP EliteBook x360 g2 ",
+    price: "Ksh.38,000",
+    desc: "HP EliteBook x360 1030 G2 7th Gen Intel Core i7, 8GB RAM, 256GB SSD, 13.3-inch Touchscreen Convertible Laptop",
+    img: "img/1030g2.jpg"
+  },
+  {
     id: 2.1,
     category: "Laptop",
     type: "lenovo-laptop", // matches dropdown "lenovo"
@@ -85,8 +94,9 @@ const products = [
     desc: "lenovo thinkpad 4gb/128ssd coi5 6th gen intel processor speed 2.0ghz",
     img: "img/dell.jpeg"
   },
+  
   {
-    id: 3.3,
+    id: 3.4,
     category: "Laptop",
     type: "dell-laptop", // matches dropdown "dell"
     name: "Dell Pentium chromebook",
@@ -94,6 +104,8 @@ const products = [
     desc: "lenovo thinkpad 4gb/128ssd coi5 6th gen intel processor speed 2.0ghz",
     img: "img/pentium.jpg"
   },
+
+  
    {
     id: 4.0,
     category: "Laptop",

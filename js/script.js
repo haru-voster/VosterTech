@@ -46,7 +46,7 @@ const products = [
     name: "HP EliteBook x360 g2 ",
     price: "Ksh.38,000",
     desc: "HP EliteBook x360 1030 G2 7th Gen Intel Core i7, 8GB RAM, 256GB SSD, 13.3-inch Touchscreen Convertible Laptop",
-    img: "img/1030g2.jpg"
+    img: "img/1030.jpg"
   },
   {
     id: 2.1,

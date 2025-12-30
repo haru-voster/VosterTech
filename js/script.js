@@ -90,17 +90,17 @@ const products = [
     category: "Laptop",
     type: "dell-laptop", // matches dropdown "dell"
     name: "Dell Precision 5570 ",
-    price: "Ksh.24,999",
-    desc: "Dell precision 4gb/128ssd coi5 6th gen intel processor speed 2.0ghz",
+    price: "Ksh.34,999",
+    desc: "Dell precision 16gb/512gb coi7 8th gen intel processor speed 1.6-1.8ghz",
     img: "img/dell.jpeg"
   },
     {
     id: 3.2,
     category: "Laptop",
     type: "dell-laptop", // matches dropdown "dell"
-    name: "Dell Precision 5300 ",
-    price: "Ksh.30,000",
-    desc: "Dell 5300 8gb/256ssd coi5 8th gen intel processor speed 2.0ghz",
+    name: "Dell Latitude 5300 ",
+    price: "Ksh.27,000",
+    desc: "Dell Latitude 5300 8gb/256ssd coi5 8th gen intel processor speed 2.2ghz",
     img: "img/dell7400.jpg"
   },
   {

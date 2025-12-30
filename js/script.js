@@ -106,7 +106,7 @@ const products = [
   {
     id: 3.4,
     category: "Laptop",
-    type: "dell-laptop", // matches dropdown "dell"
+    type: "dell-laptop", // matches dropdown "dell pentium"
     name: "Dell Pentium chromebook",
     price: "Ksh.12,999",
     desc: "lenovo thinkpad 4gb/128ssd coi5 6th gen intel processor speed 2.0ghz",

@@ -586,7 +586,7 @@ const products = [
 document.addEventListener("DOMContentLoaded", () => {
   //product sold  out
   const soldOutItems = [
-    { name: "Lenovo ThinkPad X250", img: "img/lenovo2.webp" },
+    { name: "Dell latitude 5300", img: "img/dell5300.jpg" },
      { name: "Nvme casing with 256GB SSD", img: "img/nvme1.jpeg" },
     { name: "hp battery", img: "img/battery.webp" },
     { name: "HP 8200 Desktop", img: "img/Hp-8200-desktop.jpg" },

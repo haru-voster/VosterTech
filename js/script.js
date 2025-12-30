@@ -91,10 +91,18 @@ const products = [
     type: "dell-laptop", // matches dropdown "dell"
     name: "Dell Precision 5570 ",
     price: "Ksh.24,999",
-    desc: "lenovo thinkpad 4gb/128ssd coi5 6th gen intel processor speed 2.0ghz",
+    desc: "Dell precision 4gb/128ssd coi5 6th gen intel processor speed 2.0ghz",
     img: "img/dell.jpeg"
   },
-  
+    {
+    id: 3.2,
+    category: "Laptop",
+    type: "dell-laptop", // matches dropdown "dell"
+    name: "Dell Precision 5300 ",
+    price: "Ksh.30,000",
+    desc: "Dell 5300 8gb/256ssd coi5 8th gen intel processor speed 2.0ghz",
+    img: "img/dell7400.jpg"
+  },
   {
     id: 3.4,
     category: "Laptop",

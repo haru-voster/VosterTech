@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <title>VosterTech - Computers, Laptops & Accessories</title>
 
   <!-- Bootstrap 5 CDN -->
@@ -159,9 +159,10 @@
 
   </div>
   <style>
-    .hero-img {
-  position: absolute;
-  width: 250px;
+   .hero-img {
+  width: 18vw;        /* responsive */
+  max-width: 220px;  /* limit on large screens */
+  min-width: 120px;  /* limit on small screens */
   opacity: 0.9;
   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
   transition: transform 0.5s ease-in-out;

@@ -163,10 +163,11 @@
   position: absolute;
 
   width: 18vw;        /* responsive */
-  max-width: 220px;  /* limit on large screens */
+
   min-width: 120px;  /* limit on small screens */
-
-
+max-width: 100%;
+  
+  height: auto;
   opacity: 0.9;
   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
   transition: transform 0.5s ease-in-out;
@@ -197,6 +198,23 @@
   0%,100% { transform: translateY(0); }
   50% { transform: translateY(10px); }
 }
+@media (max-width: 768px) {
+  .hero-img {
+    width: 35vw;
+    opacity: 0.6;
+  }
+
+  .hero-img-left {
+    left: -5%;
+    bottom: 0;
+  }
+
+  .hero-img-right {
+    right: -5%;
+    top: 0;
+  }
+}
+
 
   </style>
 </header>
